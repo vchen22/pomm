@@ -6,9 +6,10 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
+const { viewWorkSession } = require('./routes/worksession');
 // Example route
 // var user = require('./routes/user');
 
@@ -35,6 +36,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+app.get('/worksession', viewWorkSession);
 // Example route
 // app.get('/users', user.list);
 
