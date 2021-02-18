@@ -1,0 +1,53 @@
+.sky-blue {
+    background-color: #CAF0F8;
+    padding-top: 6vh;
+    padding-bottom: 50vh;
+}
+
+.grass-green {
+    background-color: #508D3C;
+    padding-top: 6vh;
+    padding-bottom: 4vh;
+}
+
+.pixel-tree {
+    width: 90%;
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+}
+
+.icon-pic {
+    width: 40%;
+}
+
+.icon-btn {
+   padding-top: 1vh;
+   outline: 1px solid black;
+}
+
+.navbar {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.work-button {
+    font-family: 'Gaegu', cursive;
+    font-size: 25px;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+    margin-top: 8vh;
+    width: 100%;
+    background-color: #FC6B6B;
+    color: black;
+    border: 2px solid black;
+}
+
+body h1 {
+    font-family: 'Gaegu', cursive;
+    text-align: center;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color: #FC6B6B;
+    font-size: 90px;
+}
