@@ -63,6 +63,17 @@ body {
     border-radius: 10px;
 }
 
+body p {
+    font-family: 'Gaegu', cursive;
+    font-size: 22px;
+}
+
+.timer-text {
+    font-family: 'Gaegu', cursive;
+    font-size: 22px;
+    padding-top: 5px;
+}
+
 body h2 {
     font-family: 'Gaegu', cursive;
     text-align: center;

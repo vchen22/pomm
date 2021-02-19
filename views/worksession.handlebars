@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
-	<!-- Gaegu Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <!-- Gaegu Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="css/worksession.css" />
+    <link rel="stylesheet" type="text/css" href="css/worksession.css" />
     <title>Work Session</title>
 </head>
+
 <body>
     <header class="container-fluid header">
         <h1>Work Session</h1>
     </header>
-    
+
     <main>
         <section id="time">
             <div class="container">
-                <div class ="container-fluid">
-                    <div class ="row timer-break">
-                        <div class ="col">
-                            {{!-- <h3 class="time-title">Work</h3>  --}}
-                            <p>Work<p>
+                <div class="container-fluid">
+                    <div class="row timer-break">
+                        <div class="col-2 timer-text">
+                            {{!-- <h3 class="time-title">Work</h3> --}}
+                            <p>Work</p>
                         </div>
-                        <div class ="col work-time">
+                        <div class="col work-time">
                             <p class="time-input">25 min</p>
                         </div>
-                        <div class ="col">
+                        <div class="col-2 timer-text">
                             {{!-- <h3 class="time-title">Break</h3> --}}
                             <p>Break</p>
                         </div>
-                        <div class ="col break-time">
+                        <div class="col break-time">
                             <p class="time-input">5 min</p>
                         </div>
+                    </div>
                 </div>
-            </div>          
             </div>
         </section>
 
-        <section id="mid timer"> 
-                <div class="container text-center">
+        <section id="mid timer">
+            <div class="container text-center">
                 <div id="clock" class="text-center">
-                <p>24:05</p>
-            </div>
+                    <p>24:05</p>
+                </div>
         </section>
-        
+
         <section id="pause">
             <h2>Working on COGS 120 HW</h2>
             <div class="text-center pause-btn">
                 <button type="button" class="btn btn-primary btn-lg btn-block pause-button">Pause Session</button>
-            </div> 
+            </div>
         </section>
 
         <section id="todo">
@@ -85,16 +87,17 @@
 
         <section id="stop">
             <div class="text-center">
-            <button type="button" class="btn btn-primary btn-lg btn-block stop-button">Stop Session</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block stop-button">Stop Session</button>
             </div>
         </section>
-        
+
     </main>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 </body>
-</html> 
+
+</html>

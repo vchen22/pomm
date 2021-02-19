@@ -26,31 +26,43 @@
 	</div>
 	<img src="img/pngwing.com.png" alt="Pixel tree" class="pixel-tree center-block">
 	<div class="container-fluid grass-green">
-		<button type="button" class="btn btn-primary btn-lg btn-block stop-button">Create Work Session</button>
+		{{!-- <button type="button" class="btn btn-primary btn-lg btn-block work-button">Create Work Session</button>
+		--}}
+		<a class="btn btn-link btn-primary btn-lg btn-block work-button" href="/settimer">Create Work Session</a>
 	</div>
 	<div class="navbar">
 		<div class="col">
-			<button class="btn btn-default icon-btn">
+			{{!-- <button class="btn btn-default icon-btn">
 				<img src="img/friends.png" class="icon-pic" />
-			</button>
-		</div>
-		<div class="col">
-			<button class="btn btn-default icon-btn">
-				<img src="img/home.png" class="icon-pic" />
-			</button>
+			</button> --}}
 
+			<a class="btn btn-default icon-btn" href="/profile">
+				<img src="img/user.png" class="icon-pic" />
+			</a>
 		</div>
 		<div class="col">
-			<button class="btn btn-default icon-btn">
+			{{!-- <button class="btn btn-default icon-btn">
+				<img src="img/home.png" class="icon-pic" />
+			</button> --}}
+			<a class="btn btn-default icon-btn" href="/">
+				<img src="img/home.png" class="icon-pic" />
+			</a>
+		</div>
+		<div class="col">
+			{{!-- <button class="btn btn-default icon-btn">
 				<img src="img/user.png" class="icon-pic" />
-			</button>
+			</button> --}}
+
+			<a class="btn btn-default icon-btn" href="/friends">
+				<img src="img/friends.png" class="icon-pic" />
+			</a>
 
 		</div>
 	</div>
 
 
 
-	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<!-- Bootstrap Setup - should be at bottom -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
 		crossorigin="anonymous"></script>
