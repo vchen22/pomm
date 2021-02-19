@@ -6,12 +6,16 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
+<<<<<<< HEAD
 const { viewFriends } = require('./routes/friends');
 const { viewProfile } = require('./routes/profile');
 const { setTimer } = require('./routes/settimer');
+=======
+const { viewWorkSession } = require('./routes/worksession');
+>>>>>>> pommSession
 // Example route
 // var user = require('./routes/user');
 
@@ -38,9 +42,13 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+<<<<<<< HEAD
 app.get('/friends', viewFriends);
 app.get('/profile', viewProfile);
 app.get('/settimer', setTimer);
+=======
+app.get('/worksession', viewWorkSession);
+>>>>>>> pommSession
 // Example route
 // app.get('/users', user.list);
 
