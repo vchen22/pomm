@@ -9,13 +9,10 @@ var path = require('path');
 var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
-<<<<<<< HEAD
 const { viewFriends } = require('./routes/friends');
 const { viewProfile } = require('./routes/profile');
 const { setTimer } = require('./routes/settimer');
-=======
 const { viewWorkSession } = require('./routes/worksession');
->>>>>>> pommSession
 // Example route
 // var user = require('./routes/user');
 
