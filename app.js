@@ -42,13 +42,10 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
-<<<<<<< HEAD
 app.get('/friends', viewFriends);
 app.get('/profile', viewProfile);
 app.get('/settimer', setTimer);
-=======
 app.get('/worksession', viewWorkSession);
->>>>>>> pommSession
 // Example route
 // app.get('/users', user.list);
 
