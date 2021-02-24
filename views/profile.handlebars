@@ -5,11 +5,47 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
+    <!-- Gaegu Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/profile.css" />
 </head>
 
 <body>
-    <h1>profile's page</h1>
+    <img src="/img/profilepic.png" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
+	<h1>Jane Doe</h1>
+	<div id="stats" class="container">
+		<div class="row">
+			<div class="col text-center"><h2>Sessions</h2></div>
+			<div class="col text-center"><h2>Pomms</h2></div>
+		</div>
+		<div class="row">
+			<div class="col text-center"><p>9</p></div>
+			<div class="col text-center"><p>4</p></div>
+		</div>
+	</div>
+	<h2>History</h2>
+	{{!-- tracking charts --}}
+	<div id="charts" class="d-block bg-info">
+		<p>tracking charts go here weeeeee</p>
+	</div>
+
+	{{!-- switch between weekly/monthly view --}}
+	<div id="toggle" class="btn-group d-flex justify-content-center">
+		<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+		<label class="btn btn-secondary w-25" for="option1">Weekly</label>
+
+		<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+		<label class="btn btn-secondary w-25" for="option2">Monthly</label>
+	</div>
+
+
 </body>
 
 </html>
