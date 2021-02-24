@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -13,6 +12,8 @@ const { viewFriends } = require('./routes/friends');
 const { viewProfile } = require('./routes/profile');
 const { setTimer } = require('./routes/settimer');
 const { viewWorkSession } = require('./routes/worksession');
+const { login } = require('./routes/login');
+const { signup } = require('./routes/signup');
 // Example route
 // var user = require('./routes/user');
 
@@ -39,6 +40,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+app.get('/login', login);
+app.get('/signup', signup);
 app.get('/friends', viewFriends);
 app.get('/profile', viewProfile);
 app.get('/settimer', setTimer);
@@ -46,6 +49,6 @@ app.get('/worksession', viewWorkSession);
 // Example route
 // app.get('/users', user.list);
 
-http.createServer(app).listen(app.get('port'), function(){
+http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });

@@ -1,11 +1,11 @@
 .sky-blue {
-    /* background-color: #CAF0F8; */
+    background-color: #CAF0F8;
     padding-top: 6vh;
     padding-bottom: 50vh;
 }
 
 .grass-green {
-    /* background-color: #508D3C; */
+    background-color: #508D3C;
     background-color: lightgray;
     padding-top: 6vh;
     padding-bottom: 4vh;
@@ -41,21 +41,75 @@
     padding-bottom: 0vh;
     margin-top: 8vh;
     width: 100%;
-    /* background-color: #FC6B6B; */
-    background-color: gray;
+    background-color: #FC6B6B;
     color: black;
     border: 2px solid black;
+}
+
+.sign-in {
+    font-family: 'Gaegu', cursive;
+    font-size: 25px;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+    margin-top: 3vh;
+    width: 100%;
+    background-color: #FC6B6B;
+    color: black;
+    border: 2px solid black;
+}
+
+.create-account {
+    font-family: 'Gaegu', cursive;
+    font-size: 25px;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+    width: 100%;
+    background-color: #FC6B6B;
+    color: black;
+    border: 2px solid black;
+}
+
+.account-form {
+    padding-top: 8vh;
+}
+
+.landing-page {
+    background-color: #CAF0F8;
+    padding-bottom: 100vh;
+}
+
+body form {
+    font-family: 'Gaegu', cursive;
+    font-size: 30px;
 }
 
 body h1 {
     font-family: 'Gaegu', cursive;
     text-align: center;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    /* color: #FC6B6B; */
+    color: #FC6B6B;
     font-size: 90px;
 }
 
-/* grayscaled tree and other images */
-img {
-    filter: grayscale(100%);
+body h2 {
+    font-family: 'Gaegu', cursive;
+    text-align: center;
+    padding-top: 5vh;
+    /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color: #FC6B6B; */
+    font-size: 70px;
 }
+
+body p {
+    font-family: 'Gaegu', cursive;
+    text-align: center;
+    margin-top: 8vh;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #FC6B6B; */
+    font-size: 30px;
+}
+
+/* grayscaled tree and other images */
+/* img {
+    filter: grayscale(100%);
+} */
