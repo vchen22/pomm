@@ -6,6 +6,7 @@ h1 {
     text-align: center;
 }
 
-/* pfp {
-    border-radius: 25%;
-} */
+.pfp {
+    height: 100px;
+    width: 100px;
+}
