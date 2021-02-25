@@ -4,8 +4,8 @@
 
 .sky-blue {
     background-color: #CAF0F8;
-    padding-top: 2vh;
-    padding-bottom: 3vh;
+    padding-top: 0vh;
+    padding-bottom: 1vh;
 }
 
 .navbar-blue {
@@ -15,7 +15,7 @@
 .tree-bg {
     background-color: #508D3C;
     padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-bottom: 4vh;
 }
 
 .grass-green {
@@ -196,6 +196,15 @@ body h2 {
     /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     color: #FC6B6B; */
     font-size: 70px;
+}
+
+body h3 {
+    font-family: 'Gaegu', cursive;
+    text-align: center;
+    padding-right: 20px;
+    /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color: #FC6B6B; */
+    font-size: 35px;
 }
 
 body p {
