@@ -144,6 +144,10 @@
     border: 2px solid black;
 }
 
+#create-button {
+    visibility: hidden;
+}
+
 .sign-in {
     font-family: 'Gaegu', cursive;
     font-size: 25px;
