@@ -17,8 +17,6 @@
     <title>To Do List</title>
 </head>
 <body>
-    <a href="/settimer">set work/break time</a>
-
     <h1>To-do list</h1>
 
     <section id="list-bg">
@@ -32,6 +30,16 @@
         <input type="text" id="task-input" placeholder="Task Name">
         <span onclick="newTask()" class="add-btn">Add</span>
     </div>
+    
+    <section id="buttons">
+      <div class="button">
+    {{! --<div class="previous-button"><a href="/" class="previous round">&#8249;</a></div>
+    <div class="next-button"><a href="/worksession" class="next round">&#8250;</a></div> --}}
+
+    <a href="/" class="previous round">&#8249;</a>
+    <a href="/worksession" class="next round">&#8250;</a>
+  </div>
+    </section>
 
 <script>
 // Create a "close" button and append it to each list item
@@ -45,15 +53,15 @@ for (i = 0; i < taskList.length; i++) {
   taskList[i].appendChild(span);
 }
 
-  // Click on a close button to hide the current list item
-  var close = document.getElementsByClassName("close");
-  var i;
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function() {
+    var div = this.parentElement;
+    div.style.display = "none";
   }
+}
 
 // Create a new list item when clicking on the "Add" button
 function newTask() {

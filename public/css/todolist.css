@@ -121,3 +121,41 @@ input {
 .add-btn:hover {
   background-color: #bbb;
 }
+
+a {
+  align-items: right;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.button {
+  display: inline-block;
+  padding-top: 10;
+}
+
+.next-button {
+  text-align: right;
+  padding-right: 10%;
+}
+
+.previous-button {
+  text-align: left;
+  padding-left: 10%;
+}
+
+.next {
+  text-align: right;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.previous {
+  text-align: left;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.round {
+  border-radius: 50%;
+}

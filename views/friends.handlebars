@@ -27,32 +27,15 @@
 
 	{{#each friends}}
 		<div class="container list-group friend-list" id="{{id}}">
-			<a href="/dummyfriend" class="list-group-item list-group-item-action">
+			<a href="/dummy{{id}}" class="list-group-item list-group-item-action">
 				<img src="/img/{{image}}" alt="friend's profile pic" class="img-thumbnail pfp rounded-circle">
 				{{name}}
+				<div class="status">
+					<span class="dot"></span>
+				</div>
 			</a>
 		</div>
 	{{/each}}
-
-	{{!-- <div class="list-group friend-list">
-		<a href="/dummyfriend" class="list-group-item list-group-item-action">
-			Pomm member</a>
-		<a href="/dummyfriend" class="list-group-item list-group-item-action">
-			<img src="/img/profilepic.png" alt="friend's profile pic" class="img-thumbnail pfp rounded-circle">
-			Vicki Chen</a>
-		<a href="/dummyfriend" class="list-group-item list-group-item-action">
-			<img src="/img/profilepic.png" alt="friend's profile pic" class="img-thumbnail pfp rounded-circle">
-			Jarrett Cornelison</a>
-		<a href="/dummyfriend" class="list-group-item list-group-item-action">
-			<img src="/img/profilepic.png" alt="friend's profile pic" class="img-thumbnail pfp rounded-circle">
-			Vivian Tang</a>
-		<a href="/dummyfriend" class="list-group-item list-group-item-action">
-			<img src="/img/profilepic.png" alt="friend's profile pic" class="img-thumbnail pfp rounded-circle">
-			Julian Yan</a>
-	</div> --}}
-
-
-
 </body>
 
 </html>
