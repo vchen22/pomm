@@ -37,12 +37,12 @@
 // Create a "close" button and append it to each list item
 var taskList = document.getElementsByTagName("LI");
 var i;
-for (i = 0; i < tasklist.length; i++) {
+for (i = 0; i < taskList.length; i++) {
   var span = document.createElement("SPAN");
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
-  tasklist[i].appendChild(span);
+  taskList[i].appendChild(span);
 }
 
 // Click on a close button to hide the current list item
