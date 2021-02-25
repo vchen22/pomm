@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {{!-- <script src="jquery-3.5.1.min.js"></script> --}}
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -36,11 +37,24 @@
             <section id="list-bg">
             {{#each taskname}}
                 <ul id="task-list">
-                    <li class="task-name" id={{id}} onclick="taskDone()">{{name}}</li>
+                    <li class="task-name" id="{{id}}" onclick="taskDone()">{{name}}</li>
                 </ul>
             {{/each}}   
             </section>  
         </section>
+
+        <script>
+            function taskDone() {
+                var x = document.getElementById("id");
+                console.log(x.style.textDecoration);
+                if (x.style.textDecoration == "none") {
+                    x.style.textDecoration = "line-through";
+                }
+                else {
+                    x.style.textDecoration = "none";
+                }
+            }
+        </script>
 
         <section id="stop">
             <div class="text-center">
