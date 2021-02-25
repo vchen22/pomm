@@ -14,6 +14,7 @@ const { setTimer } = require('./routes/settimer');
 const { viewWorkSession } = require('./routes/worksession');
 const { login } = require('./routes/login');
 const { signup } = require('./routes/signup');
+const { home } = require('./routes/home');
 // Example route
 // var user = require('./routes/user');
 
@@ -40,6 +41,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+app.get('/home', home);
 app.get('/login', login);
 app.get('/signup', signup);
 app.get('/friends', viewFriends);

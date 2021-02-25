@@ -8,12 +8,8 @@ signinForm.addEventListener('submit', (e) => {
   const email = signinForm['signin-email'].value;
   const password = signinForm['signin-password'].value;
 
-  console.log(email, password);
-
   // sign in the user
   auth.signInWithEmailAndPassword(email, password).then((cred) => {
-    console.log(cred.user);
-
     signinForm.reset();
   });
 });
