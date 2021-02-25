@@ -16,6 +16,11 @@ auth.onAuthStateChanged((user) => {
     // let signupBtn = document.getElementById('signup-btn');
     // loginBtn.remove();
     // signupBtn.remove();
+    document.getElementById('create-button').style.visibility = 'visible';
+    document.getElementById('friend-btn').style.visibility = 'visible';
+    document.getElementById('login-btn').style.visibility = 'hidden';
+    document.getElementById('signup-btn').style.visibility = 'hidden';
+    document.getElementById('logout-btn').style.visibility = 'visible';
     db.collection('users')
       .doc(user.uid)
       .get()
@@ -73,6 +78,11 @@ auth.onAuthStateChanged((user) => {
         <h3 id="greeting-text">Please Sign In</h3>
         `;
     document.getElementById('greeting-text').innerHTML = greeting;
+    document.getElementById('create-button').style.visibility = 'hidden';
+    document.getElementById('friend-btn').style.visibility = 'hidden';
+    document.getElementById('login-btn').style.visibility = 'visible';
+    document.getElementById('signup-btn').style.visibility = 'visible';
+    document.getElementById('logout-btn').style.visibility = 'hidden';
     document.getElementById('pomm1').style.visibility = 'hidden';
   }
 });

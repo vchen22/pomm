@@ -144,6 +144,26 @@
     border: 2px solid black;
 }
 
+#create-button {
+    visibility: hidden;
+}
+
+#login-btn {
+    visibility: hidden;
+}
+
+#signup-btn {
+    visibility: hidden;
+}
+
+#logout-btn {
+    visibility: hidden;
+}
+
+#friend-btn {
+    visibility: hidden;
+}
+
 .sign-in {
     font-family: 'Gaegu', cursive;
     font-size: 25px;
