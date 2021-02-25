@@ -86,23 +86,28 @@ signupForm.addEventListener('submit', (e) => {
   // get user info
   const email = signupForm['signup-email'].value;
   const password = signupForm['signup-password'].value;
+  const confirm = signupForm['signup-confirm'].value;
   const first = signupForm['signup-first'].value;
   const last = signupForm['signup-last'].value;
 
-  // sign up the user
-  auth
-    .createUserWithEmailAndPassword(email, password)
-    .then((cred) => {
-      return db.collection('users').doc(cred.user.uid).set({
-        firstName: first,
-        lastName: last,
-        points: 0,
+  if (password !== confirm) {
+    alert("Passwords don't match!");
+  } else {
+    // sign up the user
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((cred) => {
+        return db.collection('users').doc(cred.user.uid).set({
+          firstName: first,
+          lastName: last,
+          points: 0,
+        });
+      })
+      .then(() => {
+        $('.close').click();
+        signupForm.reset();
       });
-    })
-    .then(() => {
-      $('.close').click();
-      signupForm.reset();
-    });
+  }
 });
 
 // sign in
