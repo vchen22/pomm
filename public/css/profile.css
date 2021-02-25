@@ -1,0 +1,33 @@
+* {
+    font-family: 'Gaegu', cursive;
+}
+body {
+    padding: 10%;
+}
+
+#pfp {
+    height: 45vw;
+    width: 45vw;
+    margin-bottom: 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+#stats {
+    margin-bottom: 9%;
+}
+
+#charts {
+    padding: 2% 10%;
+    height: 60vw;
+}
+
+input {
+    visibility: hidden;
+}
+
+#toggle {
+    padding: 5% 10%;
+}
