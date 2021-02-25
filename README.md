@@ -13,3 +13,7 @@ Tree: https://www.pngwing.com/en/free-png-zvwvk/download
 Sign in: https://getbootstrap.com/docs/4.0/examples/sign-in/
 
 To-do list: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_todo
+
+Stopwatch: https://jsfiddle.net/Daniel_Hug/pvk6p/
+
+
