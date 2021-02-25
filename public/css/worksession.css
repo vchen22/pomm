@@ -41,11 +41,20 @@ body {
     padding-bottom: 0vh;
     margin-top: 8vh;
     width: 60%;
-    /* background-color: #FC6B6B; */
     background-color: whitesmoke;
     color: black;
     border: 2px solid black;
     border-radius: 10px;
+}
+
+#start {
+    display: block;
+    background-color: lightgreen;
+}
+
+#pause {
+    display: none;
+    background-color: lightcoral;
 }
 
 .stop-button {
