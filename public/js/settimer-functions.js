@@ -13,4 +13,5 @@ function setLongSession() {
     x.innerHTML = "50:00";
   } else {
     x.innerHTML = "Hello";
+  }
 }

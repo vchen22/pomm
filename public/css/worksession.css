@@ -36,7 +36,6 @@ body {
 }
 
 .pause-button {
-    font-family: 'Gaegu', cursive;
     font-size: 19px;
     padding-top: 0vh;
     padding-bottom: 0vh;
@@ -68,12 +67,6 @@ body p {
     font-size: 22px;
 }
 
-.timer-text {
-    font-family: 'Gaegu', cursive;
-    font-size: 22px;
-    padding-top: 5px;
-}
-
 body h2 {
     font-family: 'Gaegu', cursive;
     text-align: center;
@@ -98,57 +91,62 @@ body h1 {
     font-size: 40px;
 }
 
-.todo-list{
-    align-items: center;
-    justify-content: center;
-    background-color: lightgray;
-    width: 80%;
-    border-radius: 10px;
-    padding: 1%;
-    margin-left: 9vw;
-    height: 20vh;
-}
+/* TO DO LIST STYLE - need to take some out*/
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  #list-bg {
+      background-color: pink;
+      border-radius: 25px;
+      margin-left: 25px;
+      margin-right: 25px;
+      padding: 10px;
+      padding-top: 13px;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0px;
+    padding: 0;
+  }
+  
+  li {
+      border-radius: 25px;
+      margin-bottom: 3px;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  #task1 {
+      text-decoration: none;
+  }
 
-.form-check {
-    border-radius: 10px;
-    background-color: white;
-    margin: 2%;
-    padding-left: 15%;
-    text-align: left;
-}
-
-.form-check-input {
-    margin-left: 10%;
-}
-
-.form-check-label {
-    text-align: left;
-}
-
-.time-input {
-    border: 1px solid black;
-    border-radius: 10px;
-    background: white;
-    padding: 5px;
-    /* text-align: center; */
-}
-
-/* .col {
-    border: 1px solid black;
-} */
-
-/* .timer-break {
-    text-align: center;
-} */
-
-.work-time .break-time {
-    text-align: right;
-}
-
-/* .timer-break {
-    padding-right: 5%;
-} */
-
-/* .col h3 {
-    text-align: left;
-} */
+  
+  
