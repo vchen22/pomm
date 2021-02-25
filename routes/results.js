@@ -2,11 +2,12 @@
  * GET profile page.
  */ 
 // create another view/file
-exports.viewResults = function(req, res){
-    res.render('results');
+// exports.viewResults = function(req, res){
+//     res.render('results');
+// };
 
-    // res.render("results", {
-    //     "hours": "2",
-    //     "tasks": "2"
-    // });
+var data = require('../results-nums.json')
+
+exports.viewResults = function(req, res) {
+    res.render('results', data);
 };
