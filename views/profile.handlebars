@@ -18,34 +18,20 @@
 </head>
 
 <body>
-    <img src="/img/profilepic.png" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
-	<h1>Jane Doe</h1>
+    <img src="/img/{{image}}" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
+	<h1>{{name}}</h1>
 	<div id="stats" class="container">
 		<div class="row">
 			<div class="col text-center"><h2>Sessions</h2></div>
 			<div class="col text-center"><h2>Pomms</h2></div>
+			<div class="col text-center"><h2>Points</h2></div>
 		</div>
 		<div class="row">
-			<div class="col text-center"><p>9</p></div>
-			<div class="col text-center"><p>4</p></div>
+			<div class="col text-center"><p>{{sessions}}</p></div>
+			<div class="col text-center"><p>{{pomms}}</p></div>
+			<div class="col text-center"><p>{{studypoints}}</p></div>
 		</div>
 	</div>
-	<h2>History</h2>
-	{{!-- tracking charts --}}
-	<div id="charts" class="d-block bg-info">
-		<p>tracking charts go here weeeeee</p>
-	</div>
-
-	{{!-- switch between weekly/monthly view --}}
-	<div id="toggle" class="btn-group d-flex justify-content-center">
-		<input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-		<label class="btn btn-secondary w-25" for="option1">Weekly</label>
-
-		<input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-		<label class="btn btn-secondary w-25" for="option2">Monthly</label>
-	</div>
-
-
 </body>
 
 </html>
