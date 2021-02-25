@@ -1,0 +1,14 @@
+{
+    "friends":  [
+        {
+            "name": "Vicki Chen",
+            "image": "profilepic.png",
+            "id": "friend1"
+        },
+        {
+            "name": "Vivian Tang",
+            "image": "user.png",
+            "id": "friend2"
+        }
+    ]
+}

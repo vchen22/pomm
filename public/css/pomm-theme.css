@@ -1,27 +1,124 @@
+.btn-text {
+    font-size: 20px;
+}
+
 .sky-blue {
     background-color: #CAF0F8;
-    padding-top: 6vh;
-    padding-bottom: 50vh;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+}
+
+.navbar-blue {
+    background-color: #CAF0F8;
+}
+
+.tree-bg {
+    background-color: #508D3C;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .grass-green {
     background-color: #508D3C;
-    background-color: lightgray;
-    padding-top: 6vh;
-    padding-bottom: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .pixel-tree {
-    width: 90%;
-    position: fixed;
+    width: 100%;
     bottom: 150px;
     right: 20px;
-    color: gray;
+    z-index: -1;
 }
 
 .icon-pic {
     width: 40%;
 }
+
+.parent-con {
+    position: relative;
+}
+
+.pomm1 {
+    position: absolute;
+    width: 50px;
+    top: 100px;
+    left: 40px;
+    visibility: hidden;
+}
+
+.pomm2 {
+    position: absolute;
+    width: 50px;
+    top: 110px;
+    left: 100px;
+    visibility: hidden;
+}
+
+.pomm3 {
+    position: absolute;
+    width: 50px;
+    top: 120px;
+    left: 150px;
+    visibility: hidden;
+}
+
+.pomm4 {
+    position: absolute;
+    width: 50px;
+    top: 160px;
+    left: 160px;
+    visibility: hidden;
+}
+
+.pomm5 {
+    position: absolute;
+    width: 50px;
+    top: 140px;
+    left: 60px;
+    visibility: hidden;
+}
+
+.pomm6 {
+    position: absolute;
+    width: 50px;
+    top: 100px;
+    left: 200px;
+    visibility: hidden;
+}
+
+.pomm7 {
+    position: absolute;
+    width: 50px;
+    top: 70px;
+    left: 230px;
+    visibility: hidden;
+}
+
+.pomm8 {
+    position: absolute;
+    width: 50px;
+    top: 110px;
+    left: 280px;
+    visibility: hidden;
+}
+
+.pomm9 {
+    position: absolute;
+    width: 50px;
+    top: 70px;
+    left: 160px;
+    visibility: hidden;
+}
+
+.pomm10 {
+    position: absolute;
+    width: 50px;
+    top: 60px;
+    left: 110px;
+    visibility: hidden;
+}
+
 
 .icon-btn {
    padding-top: 1vh;
@@ -39,7 +136,8 @@
     font-size: 25px;
     padding-top: 0vh;
     padding-bottom: 0vh;
-    margin-top: 8vh;
+    margin-bottom: 4vh;
+    margin-top: 4vh;
     width: 100%;
     background-color: #FC6B6B;
     color: black;
@@ -108,8 +206,3 @@ body p {
     color: #FC6B6B; */
     font-size: 30px;
 }
-
-/* grayscaled tree and other images */
-/* img {
-    filter: grayscale(100%);
-} */
