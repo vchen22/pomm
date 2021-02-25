@@ -18,6 +18,7 @@ const { viewToDoList } = require('./routes/todolist');
 const { viewDummyFriend1 } = require('./routes/dummyFriend1');
 const { viewDummyFriend2 } = require('./routes/dummyFriend2');
 const { viewResults } = require('./routes/results');
+const {viewSignIn } = require('./routes/signin');
 // Example route
 // var user = require('./routes/user');
 
@@ -44,6 +45,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', index.view);
+app.get('/signin', viewSignIn);
 app.get('/friends', viewFriends);
 // app.get('/friends', viewList);
 app.get('/dummyfriend1', viewDummyFriend1);
