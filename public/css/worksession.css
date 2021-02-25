@@ -2,47 +2,22 @@
     font-family: 'Gaegu', cursive;
 }
 
-
-.header {
-    padding: 3vh;
-}
-
 body {
-    background-color: gray;
-    font-family: 'Gaegu', cursive;
-    margin-top: 10%;
+    padding: 10%;
+    margin-top: 5%;
 }
 
-#clock {
-    padding-top: 3vh;
-    justify-content: center;
-    text-align: center;
-    padding-left: 9vh;
-}
-
-#clock > p {
-    background-color: whitesmoke;
-    padding: 3%;
+#stopwatch {
+    border: 2px solid black;
     border-radius: 10px;
-    width: 70%;
-    border: 1px solid black;
-    font-size: 40px;
-    text-align: center;
-}
-
-.pause-btn {
-    margin-top: -5vh;
-    margin-bottom: 3vh;
+    margin-top: 25%;
 }
 
 .pause-button {
     font-size: 19px;
-    padding-top: 0vh;
-    padding-bottom: 0vh;
-    margin-top: 8vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
     width: 60%;
-    background-color: whitesmoke;
-    color: black;
     border: 2px solid black;
     border-radius: 10px;
 }
@@ -58,61 +33,31 @@ body {
 }
 
 .stop-button {
-    font-family: 'Gaegu', cursive;
     font-size: 25px;
-    padding-top: 0vh;
-    padding-bottom: 0vh;
     margin-top: 8vh;
     width: 80%;
-    /* background-color: #FC6B6B; */
     background-color: whitesmoke;
-    color: black;
     border: 2px solid black;
     border-radius: 10px;
-}
-
-body p {
-    font-family: 'Gaegu', cursive;
-    font-size: 22px;
-}
-
-body h2 {
-    font-family: 'Gaegu', cursive;
-    text-align: center;
-    color: black;
-    font-size: 24px;
-}
-
-body h3 {
-    font-family: 'Gaegu', cursive;
-    text-align: left;
-    color: black;
-    font-size: 24px;
-    padding-left: 3vh;
 }
 
 body h1 {
     font-family: 'Gaegu', cursive;
     text-align: center;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    /* color: #FC6B6B; */
     color: whitesmoke;
     font-size: 40px;
 }
 
 /* TO DO LIST STYLE - need to take some out*/
 /* Include the padding and border in an element's total width and height */
-* {
-    box-sizing: border-box;
-  }
+
   
   #list-bg {
       background-color: pink;
       border-radius: 25px;
-      margin-left: 25px;
-      margin-right: 25px;
       padding: 10px;
-      padding-top: 13px;
+      margin-top: 20%;
   }
   
   /* Remove margins and padding from the list */
@@ -128,40 +73,10 @@ body h1 {
   
   /* Style the list items */
   ul li {
-    cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
     list-style-type: none;
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
-    
-    /* make the list items unselectable */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
-  
-  /* Set all odd list items to a different color (zebra-stripes) */
-  ul li:nth-child(odd) {
-    background: #f9f9f9;
-  }
-  
-  /* Darker background-color on hover */
-  ul li:hover {
-    background: #ddd;
-  }
-  
-  #task1 {
-      text-decoration: none;
-  }
-
-  #task2 {
-      text-decoration: none;
-  }
-
-  #task3 {
-      text-decoration: none;
-  }
-  
