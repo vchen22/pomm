@@ -5,10 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	{{!-- <script src="js/jquery-1.11.0.js"></script> --}}
-	{{!-- <script src="js/bootstrap.js"></script> --}}
-	{{!-- <script src="js/friends.js"></script> --}}
-
+	
 	<!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
@@ -17,22 +14,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/friends.css" />
-    <title>Friends Page</title>
-	
+    <link rel="stylesheet" type="text/css" href="css/profile.css" />
 </head>
 
 <body>
-    <h1>Friends</h1>
-
-	{{#each friends}}
-		<div class="container list-group friend-list" id="{{id}}">
-			<a href="/dummy{{id}}" class="list-group-item list-group-item-action">
-				<img src="/img/{{image}}" alt="friend's profile pic" class="img-thumbnail pfp rounded-circle">
-				{{name}}
-			</a>
+    <img src="/img/{{image}}" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
+	<h1>{{name}}</h1>
+	<div id="stats" class="container">
+		<div class="row">
+			<div class="col text-center"><h2>Sessions</h2></div>
+			<div class="col text-center"><h2>Pomms</h2></div>
+			<div class="col text-center"><h2>Points</h2></div>
 		</div>
-	{{/each}}
+		<div class="row">
+			<div class="col text-center"><p>{{sessions}}</p></div>
+			<div class="col text-center"><p>{{pomms}}</p></div>
+			<div class="col text-center"><p>{{studypoints}}</p></div>
+		</div>
+	</div>
 </body>
 
 </html>
