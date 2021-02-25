@@ -16,6 +16,7 @@ const { setTimer } = require('./routes/settimer');
 const { viewWorkSession } = require('./routes/worksession');
 const { viewToDoList } = require('./routes/todolist');
 const { viewDummyFriend } = require('./routes/dummyFriend');
+const { viewResults } = require('./routes/results');
 // Example route
 // var user = require('./routes/user');
 
@@ -49,6 +50,7 @@ app.get('/profile', viewProfile);
 app.get('/todolist', viewToDoList);
 app.get('/settimer', setTimer);
 app.get('/worksession', viewWorkSession);
+app.get('/results', viewResults);
 // Example route
 // app.get('/users', user.list);
 
