@@ -45,3 +45,41 @@ input {
 /* #friend1-status {
     background-color: #ef4040;
 } */
+
+.previous-button {
+    align-items: left;
+    font-family: 'Gaegu', cursive;
+    font-size: 20px;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+    margin-top: 8vh;
+    width: 20%;
+    /* background-color: #FC6B6B; */
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left;
+}
+
+a {
+    align-items: left;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.button {
+    text-align: left;
+    padding-right: 10%;
+    padding-top: 10;
+}
+
+.previous {
+    background-color: whitesmoke;
+    color: black;
+  }
+  
+.round {
+    border-radius: 50%;
+  }
