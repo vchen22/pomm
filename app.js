@@ -10,6 +10,7 @@ var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
 const { viewFriends } = require('./routes/friends');
+// const { viewList } = require('./routes/friends');
 const { viewProfile } = require('./routes/profile');
 const { setTimer } = require('./routes/settimer');
 const { viewWorkSession } = require('./routes/worksession');
@@ -42,6 +43,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/friends', viewFriends);
+// app.get('/friends', viewList);
 app.get('/dummyfriend', viewDummyFriend);
 app.get('/profile', viewProfile);
 app.get('/todolist', viewToDoList);

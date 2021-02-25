@@ -5,6 +5,9 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{{!-- <script src="js/jquery-1.11.0.js"></script> --}}
+	{{!-- <script src="js/bootstrap.js"></script> --}}
+	{{!-- <script src="js/friends.js"></script> --}}
 
 	<!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,7 +25,16 @@
 <body>
     <h1>Friends</h1>
 
-	<div class="list-group friend-list">
+	{{#each friends}}
+		<div class="container list-group friend-list" id="{{id}}">
+			<a href="/dummyfriend" class="list-group-item list-group-item-action">
+				<img src="/img/{{image}}" alt="friend's profile pic" class="img-thumbnail pfp rounded-circle">
+				{{name}}
+			</a>
+		</div>
+	{{/each}}
+
+	{{!-- <div class="list-group friend-list">
 		<a href="/dummyfriend" class="list-group-item list-group-item-action">
 			Pomm member</a>
 		<a href="/dummyfriend" class="list-group-item list-group-item-action">
@@ -37,7 +49,8 @@
 		<a href="/dummyfriend" class="list-group-item list-group-item-action">
 			<img src="/img/profilepic.png" alt="friend's profile pic" class="img-thumbnail pfp rounded-circle">
 			Julian Yan</a>
-	</div>
+	</div> --}}
+
 
 
 </body>
