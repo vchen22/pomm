@@ -17,6 +17,10 @@ auth.onAuthStateChanged((user) => {
     // loginBtn.remove();
     // signupBtn.remove();
     document.getElementById('create-button').style.visibility = 'visible';
+    document.getElementById('friend-btn').style.visibility = 'visible';
+    document.getElementById('login-btn').style.visibility = 'hidden';
+    document.getElementById('signup-btn').style.visibility = 'hidden';
+    document.getElementById('logout-btn').style.visibility = 'visible';
     db.collection('users')
       .doc(user.uid)
       .get()
@@ -75,6 +79,10 @@ auth.onAuthStateChanged((user) => {
         `;
     document.getElementById('greeting-text').innerHTML = greeting;
     document.getElementById('create-button').style.visibility = 'hidden';
+    document.getElementById('friend-btn').style.visibility = 'hidden';
+    document.getElementById('login-btn').style.visibility = 'visible';
+    document.getElementById('signup-btn').style.visibility = 'visible';
+    document.getElementById('logout-btn').style.visibility = 'hidden';
     document.getElementById('pomm1').style.visibility = 'hidden';
   }
 });
