@@ -1,15 +1,24 @@
 // get data
-db.collection('users')
-  .get()
-  .then((snapshot) => {
-    setupTree(snapshot.docs);
-  });
+// db.collection('users')
+//   .get()
+//   .then((snapshot) => {
+//     setupTree(snapshot.docs);
+//   });
 
 // listen for auth status changes
 auth.onAuthStateChanged((user) => {
   if (user) {
     // logged in
-    console.log('user logged in: ', user);
+    db.collection('users')
+      .doc(user.uid)
+      .get()
+      .then((doc) => {
+        let userPoints = doc.data().points;
+        console.log(userPoints);
+        if (userPoints > 0) {
+          document.getElementById('pomm1').style.visibility = 'visible';
+        }
+      });
   } else {
     // logged out
     console.log('user signed out');

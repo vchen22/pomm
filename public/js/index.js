@@ -1,7 +1,10 @@
 // put pomms on tree based on user points
-const setupTree = (data) => {
-  data.forEach((doc) => {
-    const points = doc.data();
-    console.log(points);
-  });
+const setupTree = (user) => {
+  if (user) {
+    const pointRef = db.collection('users').doc(user.uid);
+    const doc = pointRef.get();
+    console.log(doc);
+  } else {
+    console.log('user not logged in');
+  }
 };
