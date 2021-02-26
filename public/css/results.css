@@ -2,42 +2,34 @@
     font-family: 'Gaegu', cursive;
 }
 
-
 .header {
     padding: 3vh;
 }
 
 body {
-    background-color: gray;
-    font-family: 'Gaegu', cursive;
-    margin-top: 10%;
+    padding: 10%;
+    margin-top: 5%;
+    background-color: #CAF0F8;
 }
 
 body h2 {
-    font-family: 'Gaegu', cursive;
     text-align: left;
     color: black;
     font-size: 24px;
     padding-left: 3vh;
 }
 
-body h1 {
-    font-family: 'Gaegu', cursive;
+h1 {
     text-align: center;
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    /* color: #FC6B6B; */
-    color: whitesmoke;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #FC6B6B;
     font-size: 40px;
-}
+    margin-top: 5%;
+  }
 
 .result-list{
-    align-items: center;
-    justify-content: center;
     background-color: lightgray;
-    width: 80%;
     border-radius: 10px;
-    padding: 1%;
-    margin-left: 9vw;
     height: 50vh;
 }
 
@@ -48,21 +40,23 @@ body h1 {
     font-size: 25px;
 }
 
-.next-button {
-    align-items: right;
-    font-family: 'Gaegu', cursive;
-    font-size: 20px;
-    padding-top: 0vh;
-    padding-bottom: 0vh;
-    margin-top: 8vh;
-    width: 20%;
-    /* background-color: #FC6B6B; */
-    background-color: whitesmoke;
-    color: black;
-    border: 2px solid black;
-    border-radius: 10px;
+.button {
+    margin: 3%;
+    margin-top: 4%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: inline-block;
+    padding: 0;
+  }
+  
+  .next {
     text-align: right;
-}
+    background-color: #508D3C;
+    color: white;
+    font-size: 16px;
+    border: 1px solid slategray;
+    margin-bottom: 10%;
+  }
 
 a {
     align-items: right;

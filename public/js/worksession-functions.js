@@ -4,9 +4,11 @@
     var strike3 = document.getElementById('task3');
     var start = document.getElementById('start');
     var pause = document.getElementById('pause');
+    var info = document.getElementById('info');
+    var breakBtn = document.getElementById('break');
     var time = document.getElementById('stopwatch'),
     seconds = 0, minutes = 0, hours = 0,
-    t;
+    t, breaktime, tmp, minReturn;
 }
 
 function add() {
@@ -33,11 +35,19 @@ function toggle() {
         // console.log('start button pressed, pause should display');
         start.style.display = "none";
         pause.style.display = "block";
-    } else { // switch back
-        // console.log('pause button pressed, start should display');
-        start.style.display = "block";
+
+    } else if (pause.style.display === "block"){ // switch back
+        // console.log('pause button pressed, break should display');
+        breaktime = time.innerHTML;
+        breakBtn.style.display = "block";
         pause.style.display = "none";
         clearTimeout(t);
+    } else if(breakBtn.style.display === "block"){
+        start.style.display = "block";
+        pause.style.display = "none";
+        breakBtn.style.display = "none";
+        time.innerHTML = "00:00:00";
+        seconds = 0; minutes = 0; hours = 0;
     }
 }
 
@@ -65,6 +75,18 @@ function lineThru3(){
     }
 }
 
+function help(){
+    alert("Start the session and cross off tasks as you complete them. \r\n" +
+    "When you are feeling mentally fatigued or get distracted, pause the session and take a break for the amount of time displayed. \r\n" +
+    "End the session when you've completed all tasks!");
+}
+
+function breakSession(){
+    tmp = breaktime.split(':');
+    minReturn = ((+tmp[0]) * 60) + (+tmp[1]);
+
+    alert("Take a break for "+ Math.round(minReturn/5) + " minutes!");
+}
 
 function init(){
     /* Start button */
@@ -76,6 +98,9 @@ function init(){
     strike1.addEventListener('click', lineThru1);
     strike2.addEventListener('click', lineThru2);
     strike3.addEventListener('click', lineThru3);
+    info.addEventListener('click', help);
+    breakBtn.addEventListener('click', breakSession);
+    breakBtn.addEventListener('click', toggle);
 }
 
 // wait for DOM to load first
