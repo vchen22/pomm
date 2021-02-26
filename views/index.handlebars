@@ -21,14 +21,26 @@
 </head>
 
 <body>
-	<div class="container-fluid sky-blue">
-		<h1>pomm</h1>
-	</div>
-	<img src="img/pngwing.com.png" alt="Pixel tree" class="pixel-tree center-block">
-	<div class="container-fluid grass-green">
-		{{!-- <button type="button" class="btn btn-primary btn-lg btn-block work-button">Create Work Session</button> --}}
-		<a class="btn btn-link btn-primary btn-lg btn-block work-button" href="/todolist">Create Work Session</a>
-	</div>
+	<main>
+		<div class="pomm-counter-container">
+			<h3 class="pomm-counter">
+				{{numpomm}} pomm
+			<h3>
+		</div>
+
+		<div class="container-fluid sky-blue">
+			<h1>pomm</h1>
+		</div>
+		<div class="pomm-tree">
+			<img src="img/pngwing.com.png" alt="Pixel tree" class="pixel-tree center-block">
+			<img src="img/pomm.png" alt="pomm" class="pomm-reward">
+		</div>
+		<div class="container-fluid grass-green">
+			{{!-- <button type="button" class="btn btn-primary btn-lg btn-block work-button">Create Work Session</button> --}}
+			<a class="btn btn-link btn-primary btn-lg btn-block work-button" href="/todolist">Create Work Session</a>
+		</div>
+	</main>
+	
 	<div class="navbar">
 		<div class="col">
 			{{!-- <button class="btn btn-default icon-btn">
