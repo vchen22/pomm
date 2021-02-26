@@ -16,4 +16,6 @@ To-do list: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_todo
 
 Stopwatch: https://jsfiddle.net/Daniel_Hug/pvk6p/
 
+Info icon: https://icons.getbootstrap.com/icons/info-circle/
+
 
