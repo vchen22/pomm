@@ -80,3 +80,24 @@ body h1 {
     font-size: 18px;
     transition: 0.2s;
   }
+
+.button {
+    display: inline-block;
+    padding-top: 10;
+  }
+
+.next {
+    text-align: right;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.previous {
+    text-align: left;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.round {
+    border-radius: 50%;
+}
