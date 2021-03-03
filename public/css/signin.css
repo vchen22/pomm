@@ -1,0 +1,63 @@
+* {
+    font-family: 'Gaegu', cursive;
+}
+
+body {
+  height: 100%;
+  padding: 15%;
+}
+
+#greeting {
+  margin-top: 17%;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  color: #FC6B6B;
+  font-size: 40px;
+}
+
+h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 10%;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#submit {
+  margin-top: 4%;
+}

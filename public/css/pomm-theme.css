@@ -1,20 +1,16 @@
-.btn-text {
-    font-size: 20px;
+main {
+    background-color:#CAF0F8;
 }
-
 .sky-blue {
-    background-color: #CAF0F8;
-    padding-top: 0vh;
-    padding-bottom: 1vh;
+    /* background-color: #CAF0F8; */
+    /* padding-top: 6vh; */
+    padding-bottom: 48vh;
 }
 
-.navbar-blue {
-    background-color: #CAF0F8;
-}
-
-.tree-bg {
+.grass-green {
     background-color: #508D3C;
-    padding-top: 1vh;
+    /* background-color: lightgray; */
+    padding-top: 6vh;
     padding-bottom: 4vh;
 }
 
@@ -25,7 +21,8 @@
 }
 
 .pixel-tree {
-    width: 100%;
+    width: 90%;
+    position: absolute;
     bottom: 150px;
     right: 20px;
     z-index: -1;
@@ -129,6 +126,7 @@
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 0;
+    position: fixed;
 }
 
 .work-button {
@@ -142,26 +140,6 @@
     background-color: #FC6B6B;
     color: black;
     border: 2px solid black;
-}
-
-#create-button {
-    visibility: hidden;
-}
-
-#login-btn {
-    visibility: hidden;
-}
-
-#signup-btn {
-    visibility: hidden;
-}
-
-#logout-btn {
-    visibility: hidden;
-}
-
-#friend-btn {
-    visibility: hidden;
 }
 
 .sign-in {
@@ -187,15 +165,6 @@
     border: 2px solid black;
 }
 
-.account-form {
-    padding-top: 8vh;
-}
-
-.landing-page {
-    background-color: #CAF0F8;
-    padding-bottom: 100vh;
-}
-
 body form {
     font-family: 'Gaegu', cursive;
     font-size: 30px;
@@ -209,29 +178,27 @@ body h1 {
     font-size: 90px;
 }
 
-body h2 {
-    font-family: 'Gaegu', cursive;
-    text-align: center;
-    padding-top: 5vh;
-    /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    color: #FC6B6B; */
-    font-size: 70px;
+/* grayscaled tree and other images */
+/* img {
+    filter: grayscale(100%);
+} */
+
+.pomm-reward {
+    position: relative;
+    left: 250px;
+    bottom: 250px;
 }
 
-body h3 {
-    font-family: 'Gaegu', cursive;
-    text-align: center;
-    padding-right: 20px;
-    /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    color: #FC6B6B; */
-    font-size: 35px;
+.pomm-counter {
+    text-align: right;
 }
 
-body p {
-    font-family: 'Gaegu', cursive;
-    text-align: center;
-    margin-top: 8vh;
-    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    color: #FC6B6B; */
-    font-size: 30px;
+/* .pomm-counter-container {
+    background-color: #CAF0F8;
 }
+
+.pomm-tree {
+    background-color: #CAF0F8;
+} */
+
+/* note for later theres a gap between pomm counter and title cant color in */

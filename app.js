@@ -14,7 +14,11 @@ const { viewProfile } = require('./routes/profile');
 const { setTimer } = require('./routes/settimer');
 const { viewWorkSession } = require('./routes/worksession');
 const { viewToDoList } = require('./routes/todolist');
-const { viewDummyFriend } = require('./routes/dummyFriend');
+const { viewDummyFriend1 } = require('./routes/dummyFriend1');
+const { viewDummyFriend2 } = require('./routes/dummyFriend2');
+const { viewResults } = require('./routes/results');
+const {viewSignIn } = require('./routes/signin');
+const {viewLogOut } = require('./routes/logout');
 // Example route
 // var user = require('./routes/user');
 
@@ -40,16 +44,19 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+// app.get('/', index.view);
+// app.get('/signin', viewSignIn);
+app.get('/', viewSignIn);
+app.get('/home', index.view);
 app.get('/friends', viewFriends);
-// app.get('/friends', viewList);
-app.get('/dummyfriend', viewDummyFriend);
+app.get('/dummyfriend1', viewDummyFriend1);
+app.get('/dummyfriend2', viewDummyFriend2);
 app.get('/profile', viewProfile);
 app.get('/todolist', viewToDoList);
 app.get('/settimer', setTimer);
 app.get('/worksession', viewWorkSession);
-// Example route
-// app.get('/users', user.list);
+app.get('/results', viewResults);
+app.get('/logout', viewLogOut);
 
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));

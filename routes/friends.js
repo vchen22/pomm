@@ -1,5 +1,5 @@
 /*
- * GET home page.
+ * GET friends page.
  */ 
 // create another view/file
 // exports.viewFriends = function(req, res){

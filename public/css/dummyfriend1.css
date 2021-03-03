@@ -3,7 +3,6 @@
 }
 body {
     padding: 10%;
-    margin-top: 5%;
 }
 
 #pfp {
@@ -14,10 +13,7 @@ body {
 
 h1 {
     text-align: center;
-    color: black;
-    font-size: 40px;
-    margin-top: 5%;
-  }
+}
 
 #stats {
     margin-bottom: 9%;
@@ -40,7 +36,7 @@ input {
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    background-color: #42b37f;
+    background-color: #ef4040;
     position: absolute;
     top: 160px;
     left: 210px;
@@ -48,8 +44,23 @@ input {
 
 /* #friend1-status {
     background-color: #ef4040;
+} */
+
+.previous-button {
+    align-items: left;
+    font-family: 'Gaegu', cursive;
+    font-size: 20px;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
+    margin-top: 8vh;
+    width: 20%;
+    /* background-color: #FC6B6B; */
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: left;
 }
-*/
 
 a {
     align-items: left;
@@ -73,9 +84,4 @@ a {
     color: black;
     font-size: 16px;
     border: 1px solid slategray;
-    padding: 8px 16px;
-  }
-  
-.round {
-    border-radius: 50%;
   }
