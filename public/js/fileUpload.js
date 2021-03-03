@@ -40,7 +40,7 @@ fileInput.onchange = () => {
       });
     })
     .catch((error) => {
-      console.log('nothing to delete');
+      //console.log('nothing to delete');
 
       // Upload file
       var task = storageRef.put(selectedFile).then(() => {

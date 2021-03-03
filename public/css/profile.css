@@ -1,9 +1,12 @@
 * {
     font-family: 'Gaegu', cursive;
 }
+
+
 body {
     padding: 10%;
     margin-top: 5%;
+    background-color:#CAF0F8;
 }
 
 .progress {
@@ -85,7 +88,7 @@ a {
 }
 
 .navbar {
-    position: absolute; 
+    position: fixed; 
     bottom: 0; 
     right: 0;
     margin-bottom: -10px;

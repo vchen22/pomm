@@ -5,7 +5,8 @@
 body {
     padding: 10%;
     margin-top: 5%;
-  }
+    background-color:#CAF0F8;
+}
 
 h1 {
   text-align: center;
@@ -59,7 +60,7 @@ a {
 }
 
 .navbar {
-  position: absolute; 
+  position: fixed; 
   bottom: 0; 
   right: 0;
   margin-bottom: -10px;
