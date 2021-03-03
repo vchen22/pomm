@@ -4,7 +4,7 @@ function endListener(e) {
   e.preventDefault();
 
   auth.onAuthStateChanged((user) => {
-    console.log(totalMinutes);
+    //console.log(totalMinutes);
     if (user) {
       db.collection('users')
         .doc(user.uid)
@@ -48,12 +48,16 @@ function endListener(e) {
           }
           dbSessions++;
 
-          db.collection('users').doc(user.uid).update({
-            minutes: newMinutes,
-            pomms: dbPomms,
-            sessions: dbSessions,
-          });
-          window.location.href = '/results';
+          db.collection('users')
+            .doc(user.uid)
+            .update({
+              minutes: newMinutes,
+              pomms: dbPomms,
+              sessions: dbSessions,
+            })
+            .then(() => {
+              window.location.href = '/results';
+            });
         });
     } else {
       console.log('user not logged in');
