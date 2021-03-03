@@ -14,23 +14,22 @@ main {
     padding-bottom: 4vh;
 }
 
-.grass-green {
-    background-color: #508D3C;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
-
 .pixel-tree {
     width: 90%;
     position: absolute;
     bottom: 150px;
     right: 20px;
-    z-index: -1;
+    z-index: 0;
 }
 
 .icon-pic {
     width: 40%;
 }
+
+.icon-btn {
+    padding-top: 1vh;
+    outline: 1px solid black;
+ }
 
 .parent-con {
     position: relative;
@@ -39,7 +38,7 @@ main {
 .pomm1 {
     position: absolute;
     width: 50px;
-    top: 100px;
+    top: 300px;
     left: 40px;
     visibility: hidden;
 }
@@ -47,7 +46,7 @@ main {
 .pomm2 {
     position: absolute;
     width: 50px;
-    top: 110px;
+    top: 310px;
     left: 100px;
     visibility: hidden;
 }
@@ -55,7 +54,7 @@ main {
 .pomm3 {
     position: absolute;
     width: 50px;
-    top: 120px;
+    top: 320px;
     left: 150px;
     visibility: hidden;
 }
@@ -63,7 +62,7 @@ main {
 .pomm4 {
     position: absolute;
     width: 50px;
-    top: 160px;
+    top: 360px;
     left: 160px;
     visibility: hidden;
 }
@@ -71,7 +70,7 @@ main {
 .pomm5 {
     position: absolute;
     width: 50px;
-    top: 140px;
+    top: 340px;
     left: 60px;
     visibility: hidden;
 }
@@ -79,7 +78,7 @@ main {
 .pomm6 {
     position: absolute;
     width: 50px;
-    top: 100px;
+    top: 300px;
     left: 200px;
     visibility: hidden;
 }
@@ -87,7 +86,7 @@ main {
 .pomm7 {
     position: absolute;
     width: 50px;
-    top: 70px;
+    top: 370px;
     left: 230px;
     visibility: hidden;
 }
@@ -95,7 +94,7 @@ main {
 .pomm8 {
     position: absolute;
     width: 50px;
-    top: 110px;
+    top: 310px;
     left: 280px;
     visibility: hidden;
 }
@@ -103,7 +102,7 @@ main {
 .pomm9 {
     position: absolute;
     width: 50px;
-    top: 70px;
+    top: 270px;
     left: 160px;
     visibility: hidden;
 }
@@ -111,15 +110,9 @@ main {
 .pomm10 {
     position: absolute;
     width: 50px;
-    top: 60px;
+    top: 260px;
     left: 110px;
     visibility: hidden;
-}
-
-
-.icon-btn {
-   padding-top: 1vh;
-   outline: 1px solid black;
 }
 
 .navbar {
@@ -134,15 +127,14 @@ main {
     font-size: 25px;
     padding-top: 0vh;
     padding-bottom: 0vh;
-    margin-bottom: 4vh;
-    margin-top: 4vh;
+    margin-top: 12vh;
     width: 100%;
     background-color: #FC6B6B;
     color: black;
     border: 2px solid black;
 }
 
-.sign-in {
+/* .sign-in {
     font-family: 'Gaegu', cursive;
     font-size: 25px;
     padding-top: 0vh;
@@ -168,7 +160,7 @@ main {
 body form {
     font-family: 'Gaegu', cursive;
     font-size: 30px;
-}
+} */
 
 body h1 {
     font-family: 'Gaegu', cursive;
@@ -183,11 +175,11 @@ body h1 {
     filter: grayscale(100%);
 } */
 
-.pomm-reward {
+/* .pomm-reward {
     position: relative;
     left: 250px;
     bottom: 250px;
-}
+} */
 
 .pomm-counter {
     text-align: right;

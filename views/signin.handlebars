@@ -30,6 +30,10 @@
     <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
     <button id="submit" class="btn-lg btn-primary btn-block" type="submit">Sign in</button>
   </form>
+  <h2>Don't have an account?</h2>
+  <a class="btn-lg btn-primary btn-block" href="/signup">
+    Sign Up
+  </a>
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
@@ -64,7 +68,7 @@
     db.settings({ timestampsInSnapshots: true });
   </script>
 
-  <script type="text/javascript" src="js/auth.js"></script>
+  <script type="text/javascript" src="js/authSignin.js"></script>
 
 </body>
 

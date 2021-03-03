@@ -1,7 +1,6 @@
 /*
  * GET signup page.
  */
-// create another view/file
-exports.signup = function (req, res) {
+exports.viewSignUp = function (req, res) {
   res.render('signup');
 };
