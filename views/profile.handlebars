@@ -20,11 +20,8 @@
 
 <body>
 	<img src="/img/{{image}}" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
-	<div class="status">
-		<button class="dot" onclick="document.getElementById('file-input').click();">+</button>
-		<input id="file-input" type="file" name="name" style="display: none;" accept="image/*" />
-	</div>
-	<h1 id="name">{{name}}</h1>
+
+	<h1 id="name"></h1>
 	<div id="stats" class="container">
 		<div class="row">
 			<div class="col text-center">
@@ -60,6 +57,13 @@
 	<div class="progress">
 		<div class="progress-bar" id="pomm-progress" style="width: 25%" role="progressbar" aria-valuenow="25"
 			aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
+
+	<div class="text-center">
+		<button class="btn-lg btn-primary btn-block d-inline-block change-profile"
+			onclick="document.getElementById('file-input').click();">Change Profile
+			Picture</button>
+		<input id="file-input" type="file" name="name" style="display: none;" accept="image/*" />
 	</div>
 
 	<div class="text-center">

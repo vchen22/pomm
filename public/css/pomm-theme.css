@@ -187,6 +187,7 @@ body h1 {
     font-family: 'Gaegu', cursive;
     font-size: 30px;
     text-align: right;
+    margin-right: 1vh;
 }
 
 /* .pomm-counter-container {

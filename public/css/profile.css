@@ -74,6 +74,10 @@ a {
     padding: 0;
 }
 
+.change-profile {
+    margin-bottom: 3vh;
+}
+
 .previous {
     text-align: left;
     background-color: whitesmoke;

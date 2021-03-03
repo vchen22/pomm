@@ -13,7 +13,7 @@ fileInput.onchange = () => {
   storageRef
     .delete()
     .then(() => {
-      console.log('file deleted');
+      //console.log('file deleted');
 
       // Upload file
       var task = storageRef.put(selectedFile).then(() => {
