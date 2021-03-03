@@ -116,10 +116,12 @@ main {
 }
 
 .navbar {
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    position: fixed;
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+    margin-bottom: -10px;
+    background-color: white;
+    padding-top: 0px;
 }
 
 .work-button {

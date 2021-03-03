@@ -27,14 +27,14 @@ auth.onAuthStateChanged((user) => {
         document.getElementById('pomms').innerHTML = pommsHTML;
         document.getElementById('minutes').innerHTML = minutesHTML;
 
-        let pommProgress = doc.data().minutes - pomms * 20;
+        let pommProgress = pomms * 20 - doc.data().minutes;
         //console.log(pommProgress);
 
-        if (pommProgress > 15) {
+        if (pommProgress < 5) {
           document.getElementById('pomm-progress').style.width = '75%';
-        } else if (pommProgress > 10) {
+        } else if (pommProgress < 10) {
           document.getElementById('pomm-progress').style.width = '50%';
-        } else if (pommProgress > 5) {
+        } else if (pommProgress < 15) {
           document.getElementById('pomm-progress').style.width = '25%';
         } else {
           document.getElementById('pomm-progress').style.width = '0%';
