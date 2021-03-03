@@ -15,17 +15,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="css/profile.css" />
+
 </head>
 
 <body>
 	<img src="/img/{{image}}" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
 	<div class="status">
-		<span class="dot"></span>
+		<button class="dot" onclick="document.getElementById('file-input').click();">+</button>
+		<input id="file-input" type="file" name="name" style="display: none;" accept="image/*" />
 	</div>
 	<h1 id="name">{{name}}</h1>
-	<div class="status">
-		<span class="dot"></span>
-	</div>
 	<div id="stats" class="container">
 		<div class="row">
 			<div class="col text-center">
@@ -91,6 +90,7 @@
 	<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
 
@@ -114,12 +114,16 @@
 		const auth = firebase.auth();
 		const db = firebase.firestore();
 
+		// Get a reference to the storage service, which is used to create references in your storage bucket
+		var storage = firebase.storage();
+
 		// update firestore settings
 		db.settings({ timestampsInSnapshots: true });
 	</script>
 
 	<script type="text/javascript" src="js/authLogout.js"></script>
 	<script type="text/javascript" src="js/profileFill.js"></script>
+	<script type="text/javascript" src="js/fileUpload.js"></script>
 
 </body>
 

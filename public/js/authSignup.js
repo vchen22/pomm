@@ -25,6 +25,7 @@ signupForm.addEventListener('submit', (e) => {
           pomms: 0,
           sessions: 0,
           minutes: 0,
+          profilePicture: false,
         });
       })
       .then(() => {

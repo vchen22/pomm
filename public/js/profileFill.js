@@ -4,6 +4,7 @@ auth.onAuthStateChanged((user) => {
       .doc(user.uid)
       .get()
       .then((doc) => {
+        let profileBool = doc.data().profilePicture;
         let firstName = doc.data().firstName;
         let lastName = doc.data().lastName;
         let fullName = firstName + ' ' + lastName;
@@ -38,6 +39,16 @@ auth.onAuthStateChanged((user) => {
           document.getElementById('pomm-progress').style.width = '25%';
         } else {
           document.getElementById('pomm-progress').style.width = '0%';
+        }
+
+        if (profileBool) {
+          firebase
+            .storage()
+            .ref('users/' + user.uid + '/profile.jpg')
+            .getDownloadURL()
+            .then((imgUrl) => {
+              document.getElementById('pfp').src = imgUrl;
+            });
         }
       });
   } else {
