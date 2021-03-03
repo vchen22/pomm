@@ -1,39 +1,35 @@
-.btn-text {
-    font-size: 20px;
+main {
+    background-color:#CAF0F8;
 }
-
 .sky-blue {
-    background-color: #CAF0F8;
-    padding-top: 0vh;
-    padding-bottom: 1vh;
-}
-
-.navbar-blue {
-    background-color: #CAF0F8;
-}
-
-.tree-bg {
-    background-color: #508D3C;
-    padding-top: 1vh;
-    padding-bottom: 4vh;
+    /* background-color: #CAF0F8; */
+    /* padding-top: 6vh; */
+    padding-bottom: 48vh;
 }
 
 .grass-green {
     background-color: #508D3C;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    /* background-color: lightgray; */
+    padding-top: 6vh;
+    padding-bottom: 4vh;
 }
 
 .pixel-tree {
-    width: 100%;
+    width: 90%;
+    position: absolute;
     bottom: 150px;
     right: 20px;
-    z-index: -1;
+    z-index: 0;
 }
 
 .icon-pic {
     width: 40%;
 }
+
+.icon-btn {
+    padding-top: 1vh;
+    outline: 1px solid black;
+ }
 
 .parent-con {
     position: relative;
@@ -42,7 +38,7 @@
 .pomm1 {
     position: absolute;
     width: 50px;
-    top: 100px;
+    top: 300px;
     left: 40px;
     visibility: hidden;
 }
@@ -50,7 +46,7 @@
 .pomm2 {
     position: absolute;
     width: 50px;
-    top: 110px;
+    top: 310px;
     left: 100px;
     visibility: hidden;
 }
@@ -58,7 +54,7 @@
 .pomm3 {
     position: absolute;
     width: 50px;
-    top: 120px;
+    top: 320px;
     left: 150px;
     visibility: hidden;
 }
@@ -66,7 +62,7 @@
 .pomm4 {
     position: absolute;
     width: 50px;
-    top: 160px;
+    top: 360px;
     left: 160px;
     visibility: hidden;
 }
@@ -74,7 +70,7 @@
 .pomm5 {
     position: absolute;
     width: 50px;
-    top: 140px;
+    top: 340px;
     left: 60px;
     visibility: hidden;
 }
@@ -82,7 +78,7 @@
 .pomm6 {
     position: absolute;
     width: 50px;
-    top: 100px;
+    top: 300px;
     left: 200px;
     visibility: hidden;
 }
@@ -90,7 +86,7 @@
 .pomm7 {
     position: absolute;
     width: 50px;
-    top: 70px;
+    top: 370px;
     left: 230px;
     visibility: hidden;
 }
@@ -98,7 +94,7 @@
 .pomm8 {
     position: absolute;
     width: 50px;
-    top: 110px;
+    top: 310px;
     left: 280px;
     visibility: hidden;
 }
@@ -106,7 +102,7 @@
 .pomm9 {
     position: absolute;
     width: 50px;
-    top: 70px;
+    top: 270px;
     left: 160px;
     visibility: hidden;
 }
@@ -114,21 +110,18 @@
 .pomm10 {
     position: absolute;
     width: 50px;
-    top: 60px;
+    top: 260px;
     left: 110px;
     visibility: hidden;
 }
 
-
-.icon-btn {
-   padding-top: 1vh;
-   outline: 1px solid black;
-}
-
 .navbar {
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    position: fixed; 
+    bottom: 0; 
+    right: 0;
+    margin-bottom: -10px;
+    background-color: white;
+    padding-top: 0px;
 }
 
 .work-button {
@@ -136,35 +129,14 @@
     font-size: 25px;
     padding-top: 0vh;
     padding-bottom: 0vh;
-    margin-bottom: 4vh;
-    margin-top: 4vh;
+    margin-top: 12vh;
     width: 100%;
     background-color: #FC6B6B;
     color: black;
     border: 2px solid black;
 }
 
-#create-button {
-    visibility: hidden;
-}
-
-#login-btn {
-    visibility: hidden;
-}
-
-#signup-btn {
-    visibility: hidden;
-}
-
-#logout-btn {
-    visibility: hidden;
-}
-
-#friend-btn {
-    visibility: hidden;
-}
-
-.sign-in {
+/* .sign-in {
     font-family: 'Gaegu', cursive;
     font-size: 25px;
     padding-top: 0vh;
@@ -187,19 +159,10 @@
     border: 2px solid black;
 }
 
-.account-form {
-    padding-top: 8vh;
-}
-
-.landing-page {
-    background-color: #CAF0F8;
-    padding-bottom: 100vh;
-}
-
 body form {
     font-family: 'Gaegu', cursive;
     font-size: 30px;
-}
+} */
 
 body h1 {
     font-family: 'Gaegu', cursive;
@@ -209,29 +172,30 @@ body h1 {
     font-size: 90px;
 }
 
-body h2 {
-    font-family: 'Gaegu', cursive;
-    text-align: center;
-    padding-top: 5vh;
-    /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    color: #FC6B6B; */
-    font-size: 70px;
-}
+/* grayscaled tree and other images */
+/* img {
+    filter: grayscale(100%);
+} */
 
-body h3 {
-    font-family: 'Gaegu', cursive;
-    text-align: center;
-    padding-right: 20px;
-    /* text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    color: #FC6B6B; */
-    font-size: 35px;
-}
+/* .pomm-reward {
+    position: relative;
+    left: 250px;
+    bottom: 250px;
+} */
 
-body p {
+.pomm-counter {
     font-family: 'Gaegu', cursive;
-    text-align: center;
-    margin-top: 8vh;
-    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    color: #FC6B6B; */
     font-size: 30px;
+    text-align: right;
+    margin-right: 1vh;
 }
+
+/* .pomm-counter-container {
+    background-color: #CAF0F8;
+}
+
+.pomm-tree {
+    background-color: #CAF0F8;
+} */
+
+/* note for later theres a gap between pomm counter and title cant color in */

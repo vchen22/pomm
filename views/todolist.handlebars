@@ -19,26 +19,24 @@
 <body>
     <h1>To-do list</h1>
 
-    <section id="list-bg">
+    <section id="list-bg" class="overflow-auto">
         <ul id="task-list">
-            <li>Example: COGS120 A6</li>
+            <li class="shadow">Example: COGS120 A6</li>
         </ul>
     </section>
 
-    <div id="add-task" class="header">
-        {{!-- <h2 style="margin:5px">My To Do List</h2> --}}
+    <div id="add-task" class="header text-center">
         <input type="text" id="task-input" placeholder="Task Name">
         <span onclick="newTask()" class="add-btn">Add</span>
     </div>
     
     <section id="buttons">
-      <div class="button">
-    {{! --<div class="previous-button"><a href="/" class="previous round">&#8249;</a></div>
-    <div class="next-button"><a href="/worksession" class="next round">&#8250;</a></div> --}}
-
-    <a href="/" class="previous round">&#8249;</a>
-    <a href="/worksession" class="next round">&#8250;</a>
-  </div>
+      <div class="button fixed-top d-flex justify-content-start">
+        <a href="/home" class="previous shadow-sm rounded">&#8249; Back</a>
+      </div>
+      <div class="button fixed-bottom d-flex justify-content-end">
+        <a href="/worksession" class="next shadow-sm rounded">&#8250; Next</a>
+      </div>
     </section>
 
 <script>
@@ -66,6 +64,7 @@ for (i = 0; i < close.length; i++) {
 // Create a new list item when clicking on the "Add" button
 function newTask() {
   var li = document.createElement("li");
+  li.classList.add('shadow');
   var inputValue = document.getElementById("task-input").value;
   var t = document.createTextNode(inputValue);
   li.appendChild(t);

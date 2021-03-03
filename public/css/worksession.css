@@ -5,12 +5,13 @@
 body {
     padding: 10%;
     margin-top: 5%;
+    background-color: #CAF0F8;
 }
 
 #stopwatch {
     border: 2px solid black;
     border-radius: 10px;
-    margin-top: 25%;
+    margin-top: 10%;
 }
 
 .pause-button {
@@ -24,40 +25,54 @@ body {
 
 #start {
     display: block;
-    background-color: lightgreen;
+    background-color: #508D3C;
+    color: whitesmoke;
 }
 
 #pause {
     display: none;
-    background-color: lightcoral;
+    background-color: #FC6B6B;
+}
+
+#break {
+  display: none;
+  background-color: lightgoldenrodyellow;
 }
 
 .stop-button {
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 8vh;
     width: 80%;
     background-color: whitesmoke;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 10px;
 }
 
-body h1 {
-    font-family: 'Gaegu', cursive;
+h1 {
     text-align: center;
-    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
-    color: whitesmoke;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: #FC6B6B;
     font-size: 40px;
+    margin-top: 5%;
 }
 
+h2{
+    font-size: 40px;
+    width: 50vw;
+    height: 7vh;
+    padding-top: 1%;
+    background-color: whitesmoke;
+}
+  
 /* TO DO LIST STYLE - need to take some out*/
 /* Include the padding and border in an element's total width and height */
 
   
   #list-bg {
-      background-color: pink;
-      border-radius: 25px;
-      padding: 10px;
-      margin-top: 20%;
+    background-color: #C4C4C4;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20%;
   }
   
   /* Remove margins and padding from the list */
@@ -67,16 +82,38 @@ body h1 {
   }
   
   li {
-      border-radius: 25px;
-      margin-bottom: 3px;
+    border-radius: 15px;
+    margin-bottom: 5px;
   }
   
   /* Style the list items */
   ul li {
     position: relative;
-    padding: 12px 8px 12px 40px;
+    padding: 8px 8px 8px 26px;
     list-style-type: none;
-    background: #eee;
+    background: #EBEBEB;
     font-size: 18px;
     transition: 0.2s;
+  }
+
+  .button {
+    margin: 3%;
+    margin-top: 4%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: inline-block;
+    padding: 0;
+  }
+
+  .previous {
+    text-align: left;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 16px;
+    border: 1px solid slategray;
+    padding: 8px 16px;
+  }
+
+  #info {
+      margin-top: 2%;
   }

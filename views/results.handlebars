@@ -20,16 +20,15 @@
 
 <body>
     <header class="container-fluid header">
-        <h1>Work Session</h1>
+        <h1>Work Session Results</h1>
     </header>
 
     <main>
         <section id="results">
-            <h2>Results</h2>
             <div class="result-list text-center">
-                <h1>CONGRATS!!!</h1>
+                <h2>Session logistics</h2>
                 <div class="bullet">
-                    <li>Worked for {{time}} minute</li>
+                    <li>Worked for {{totalMinues}} minute</li>
                     <li>Completed {{numtask}} tasks</li>
                     <li>Gained {{points}} point</li>
                     <li>Gained {{pomm}} Pomm</li>
@@ -38,14 +37,12 @@
             </div>
         </section>
 
-        <section id="next">
-            <div class="button">
-                <a href="/" class="next round">&#8250;</a>
+        <section id="buttons">
+            <div class="button fixed-bottom d-flex justify-content-end">
+                <a href="/home" class="next shadow-sm rounded">Done</a>
             </div>
-        </section> 
+        </section>
     </main>
-
-    
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

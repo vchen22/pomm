@@ -15,132 +15,21 @@
 	<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet" />
 
 	<link rel="stylesheet" type="text/css" href="css/pomm-theme.css" />
-
-	<title>Welcome</title>
-
+	<title>Pomm</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light navbar-blue">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<h3 id="greeting-text">Please sign in</h3>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav navbar-list">
-				<li class="nav-item" id="friend-btn">
-					<a href="/friends" class="btn btn-text">
-						Friends
-					</a>
-				</li>
-				<li class="nav-item active" id="login-btn">
-					<button type="button" class="btn btn-text" data-toggle="modal" data-target="#myModal">
-						Login
-					</button>
-				</li>
-				<li class="nav-item" id="signup-btn">
-					<button type="button" class="btn btn-text" data-toggle="modal" data-target="#myModal2">
-						Sign Up
-					</button>
-				</li>
-				<li class="nav-item" id="logout-btn">
-					<button type="button" class="btn btn-text" id="logout">
-						Logout
-					</button>
-				</li>
-			</ul>
+	<main>
+		<div class="pomm-counter-container">
+			<h3 class="pomm-counter" id="greeting">
+				Welcome
+				<h3>
 		</div>
-	</nav>
 
-
-	<!-- Login Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form id="signin-form">
-						<div class="form-group">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" id="signin-email" placeholder="Enter email">
-							{{!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with
-								anyone
-								else.</small> --}}
-						</div>
-						<div class="form-group">
-							<label for="exampleInputPassword1">Password</label>
-							<input type="password" class="form-control" id="signin-password" placeholder="Password">
-						</div>
-						<button type="submit" class="btn btn-link btn-primary btn-lg btn-block sign-in">Sign
-							In</button>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					{{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
-				</div>
-			</div>
+		<div class="container-fluid sky-blue">
+			<h1>pomm</h1>
 		</div>
-	</div>
-
-	<!-- Signup Modal -->
-	<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<form id="signup-form">
-						<div class="form-group">
-							<label for="exampleInputEmail1">First Name</label>
-							<input type="text" class="form-control" id="signup-first" placeholder="Enter email">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputEmail1">Last Name</label>
-							<input type="text" class="form-control" id="signup-last" placeholder="Enter email">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" id="signup-email" placeholder="Enter email">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputPassword1">Password</label>
-							<input type="password" class="form-control" id="signup-password" placeholder="Password">
-						</div>
-						<div class="form-group">
-							<label for="exampleInputPassword1">Confirm Password</label>
-							<input type="password" class="form-control" id="signup-confirm" placeholder="Password">
-						</div>
-						<button type="submit" class="btn btn-link btn-primary btn-lg btn-block sign-in">Create
-							Account</button>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					{{!-- <button type="button" class="btn btn-primary">Save changes</button> --}}
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container sky-blue">
-		<h1>pomm</h1>
-	</div>
-
-	<div class="container tree-bg">
-		<div class="parent-con">
+		<div class="pomm-tree">
 			<img src="img/pngwing.com.png" alt="Pixel tree" class="pixel-tree center-block">
 			<img src="img/pomm.png" alt="Pomegranate" class="pomm1" id="pomm1">
 			<img src="img/pomm.png" alt="Pomegranate" class="pomm2">
@@ -153,18 +42,29 @@
 			<img src="img/pomm.png" alt="Pomegranate" class="pomm9">
 			<img src="img/pomm.png" alt="Pomegranate" class="pomm10">
 		</div>
+		<div class="container-fluid grass-green">
+			<a class="btn btn-link btn-primary btn-lg btn-block work-button text-deocration-none shadow-lg"
+				href="/todolist">Create Work Session</a>
+		</div>
+	</main>
 
+	<div class="navbar">
+		<div class="col">
+			<a class="btn btn-default icon-btn" href="/profile">
+				<img src="img/user.png" class="icon-pic" />
+			</a>
+		</div>
+		<div class="col">
+			<a class="btn btn-default icon-btn" href="/home">
+				<img src="img/home.png" class="icon-pic" />
+			</a>
+		</div>
+		<div class="col">
+			<a class="btn btn-default icon-btn" href="/friends">
+				<img src="img/friends.png" class="icon-pic" />
+			</a>
+		</div>
 	</div>
-
-
-
-	<div class="container-fluid grass-green">
-		{{!-- <button type="button" class="btn btn-primary btn-lg btn-block work-button">Create Work Session</button>
-		--}}
-		<a class="btn btn-link btn-primary btn-lg btn-block work-button" id="create-button" href="/todolist">Create Work
-			Session</a>
-	</div>
-
 
 	<!-- Option 1: Bootstrap Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
@@ -225,5 +125,5 @@
 		db.settings({ timestampsInSnapshots: true });
 	</script>
 
-	<script type="text/javascript" src="js/auth.js"></script>
+	<script type="text/javascript" src="js/homeFill.js"></script>
 </body>
