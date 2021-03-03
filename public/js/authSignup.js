@@ -21,12 +21,15 @@ signupForm.addEventListener('submit', (e) => {
         return db.collection('users').doc(cred.user.uid).set({
           firstName: first,
           lastName: last,
-          points: 0,
+          email: email,
+          pomms: 0,
+          sessions: 0,
+          minutes: 0,
         });
       })
       .then(() => {
-        $('.close').click();
         signupForm.reset();
+        window.location.href = '/home';
       })
       .catch(function (error) {
         // Handle Errors here.

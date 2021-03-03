@@ -22,7 +22,7 @@
 	<div class="status">
 		<span class="dot"></span>
 	</div>
-	<h1>{{name}}</h1>
+	<h1 id="name">{{name}}</h1>
 	<div class="status">
 		<span class="dot"></span>
 	</div>
@@ -40,13 +40,13 @@
 		</div>
 		<div class="row">
 			<div class="col text-center">
-				<p>{{sessions}}</p>
+				<p id="sessions">{{sessions}}</p>
 			</div>
 			<div class="col text-center">
-				<p>{{pomms}}</p>
+				<p id="pomms">{{pomms}}</p>
 			</div>
 			<div class="col text-center">
-				<p>{{studymins}}</p>
+				<p id="minutes">{{studymins}}</p>
 			</div>
 		</div>
 	</div>
@@ -95,6 +95,8 @@
 	</script>
 
 	<script type="text/javascript" src="js/authLogout.js"></script>
+	<script type="text/javascript" src="js/profileFill.js"></script>
+
 </body>
 
 </html>
