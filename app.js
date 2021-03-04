@@ -61,7 +61,7 @@ app.get('/worksession', viewWorkSession);
 app.get('/results', viewResults);
 app.get('/logout', viewLogOut);
 app.get('/addTask', add);
-app.get('removeTask', remove);
+app.get('/removeTask', remove);
 
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
