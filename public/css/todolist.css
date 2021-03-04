@@ -82,6 +82,12 @@ ul li {
   display: block;
 }
 
+.list-button {
+  padding-left: 10px;
+  text-align: right;
+}
+
+
 /* Style the header */
 .header {
   /*background-color: #f44336;*/
