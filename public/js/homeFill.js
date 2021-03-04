@@ -11,11 +11,8 @@ auth.onAuthStateChanged((user) => {
         //let pomms = doc.data().pomms;
         let minutes = doc.data().minutes;
 
-        let greeting = `
-        <h3 class="pomm-counter" id="greeting">
-				Welcome, ${firstName}
-				<h3>
-        `;
+        let greeting = `<h3 class="pomm-counter" id="greeting">Welcome, ${firstName}<h3>`;
+
         document.getElementById('greeting').innerHTML = greeting;
 
         if (minutes > 0) {
