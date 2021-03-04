@@ -5,49 +5,130 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
-    <!-- Gaegu Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+	<!-- Gaegu Font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="css/profile.css" />
+	<link rel="stylesheet" type="text/css" href="css/profile.css" />
+
 </head>
 
 <body>
-    <img src="/img/{{image}}" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
-	<div class="status">
-		<span class="dot"></span>
-	</div>
-	<h1>{{name}}</h1>
-	<div class="status">
-		<span class="dot"></span>
-	</div>
+	<img src="/img/{{image}}" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
+
+	<h1 id="name"></h1>
 	<div id="stats" class="container">
 		<div class="row">
-			<div class="col text-center"><h2># of Sessions</h2></div>
-			<div class="col text-center"><h2># of Pomms</h2></div>
-			<div class="col text-center"><h2>Study Minutes</h2></div>
+			<div class="col text-center">
+				<h2># of Sessions</h2>
+			</div>
+			<div class="col text-center">
+				<h2># of Pomms</h2>
+			</div>
+			<div class="col text-center">
+				<h2>Study Minutes</h2>
+			</div>
 		</div>
 		<div class="row">
-			<div class="col text-center"><p>{{sessions}}</p></div>
-			<div class="col text-center"><p>{{pomms}}</p></div>
-			<div class="col text-center"><p>{{studymins}}</p></div>
+			<div class="col text-center">
+				<p id="sessions">{{sessions}}</p>
+			</div>
+			<div class="col text-center">
+				<p id="pomms">{{pomms}}</p>
+			</div>
+			<div class="col text-center">
+				<p id="minutes">{{studymins}}</p>
+			</div>
 		</div>
 	</div>
 
 	<section id="buttons">
-      <div class="button fixed-top d-flex justify-content-start">
-        <a href="/home" class="previous shadow-sm rounded">&#8249; Back</a>
-      </div>
-    </section>
+		<div class="button fixed-top d-flex justify-content-start">
+			<a href="/home" class="previous shadow-sm rounded">&#8249; Back</a>
+		</div>
+	</section>
+
+	<h2>Progress To Next Pomm:</h2>
+	<div class="progress">
+		<div class="progress-bar" id="pomm-progress" style="width: 25%" role="progressbar" aria-valuenow="25"
+			aria-valuemin="0" aria-valuemax="100"></div>
+	</div>
 
 	<div class="text-center">
-		<a href="/logout" class="btn-lg btn-primary btn-block d-inline-block">Sign Out</a>
+		<button class="btn-lg btn-primary btn-block d-inline-block change-profile"
+			onclick="document.getElementById('file-input').click();">Change Profile
+			Picture</button>
+		<input id="file-input" type="file" name="name" style="display: none;" accept="image/*" />
 	</div>
+
+	<div class="text-center">
+		<button class="btn-lg btn-primary btn-block d-inline-block" id="logout">Sign Out</a>
+	</div>
+
+	<div class="navbar">
+		<div class="col">
+			<a class="btn btn-default icon-btn" href="/profile">
+				<img src="img/user.png" class="icon-pic" />
+			</a>
+		</div>
+		<div class="col">
+			<a class="btn btn-default icon-btn" href="/home">
+				<img src="img/home.png" class="icon-pic" />
+			</a>
+		</div>
+		<div class="col">
+			<a class="btn btn-default icon-btn" href="/friends">
+				<img src="img/friends.png" class="icon-pic" />
+			</a>
+		</div>
+	</div>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		var firebaseConfig = {
+			apiKey: "AIzaSyAY_pgK9cW0mdcGlmpc2G_v88r2cSsCFSw",
+			authDomain: "pomm-56dd2.firebaseapp.com",
+			projectId: "pomm-56dd2",
+			storageBucket: "pomm-56dd2.appspot.com",
+			messagingSenderId: "854481601199",
+			appId: "1:854481601199:web:4268949d2dedef3cbb4a5a",
+			measurementId: "G-YSJG7MPM1R"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+
+		// make auth and firestore references
+		const auth = firebase.auth();
+		const db = firebase.firestore();
+
+		// Get a reference to the storage service, which is used to create references in your storage bucket
+		var storage = firebase.storage();
+
+		// update firestore settings
+		db.settings({ timestampsInSnapshots: true });
+	</script>
+
+	<script type="text/javascript" src="js/authLogout.js"></script>
+	<script type="text/javascript" src="js/profileFill.js"></script>
+	<script type="text/javascript" src="js/fileUpload.js"></script>
+
 </body>
 
 </html>

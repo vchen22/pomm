@@ -5,7 +5,8 @@
 body {
     padding: 10%;
     margin-top: 5%;
-  }
+    background-color:#CAF0F8;
+}
 
 h1 {
   text-align: center;
@@ -48,12 +49,30 @@ a {
     margin-right: 6%;
     display: inline-block;
     padding: 0;
-  }
+}
 
-  .previous {
+.previous {
     text-align: left;
     background-color: whitesmoke;
     color: black;
     font-size: 16px;
     border: 1px solid slategray;
-  }
+}
+
+.navbar {
+  position: fixed; 
+  bottom: 0; 
+  right: 0;
+  margin-bottom: -10px;
+  background-color: white;
+  padding-top: 0px;
+}
+
+.icon-pic {
+    width: 40%;
+}
+
+.icon-btn {
+    padding-top: 1vh;
+    outline: 1px solid black;
+}
