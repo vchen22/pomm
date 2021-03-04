@@ -10,7 +10,7 @@ main {
 .grass-green {
     background-color: #508D3C;
     /* background-color: lightgray; */
-    padding-top: 6vh;
+    padding-top: 0vh;
     padding-bottom: 4vh;
 }
 
@@ -112,6 +112,16 @@ main {
     top: 60px;
     left: 110px;
     visibility: hidden;
+}
+
+@media only screen and (min-height: 850px) {
+    .grass-green {
+        background-color: #508D3C;
+        /* background-color: lightgray; */
+        padding-top: 0vh;
+        padding-bottom: 30vh;
+    }
+    
 }
 
 @media only screen and (min-width: 550px) {
@@ -291,7 +301,8 @@ main {
     font-family: 'Gaegu', cursive;
     font-size: 25px;
     padding-top: 0vh;
-    margin-bottom: 10vh;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
     width: 100%;
     background-color: #FC6B6B;
     color: black;
@@ -355,7 +366,7 @@ body h1 {
 .tree-bg {
     background-color: #508D3C;
     padding-top: 1vh;
-    padding-bottom: 4vh;
+    padding-bottom: 0vh;
 }
 
 /* .pomm-counter-container {
