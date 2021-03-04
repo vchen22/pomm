@@ -31,7 +31,13 @@ auth.onAuthStateChanged((user) => {
         let pommProgress = pomms * 20 - doc.data().minutes;
         //console.log(pommProgress);
 
-        if (pommProgress < 5) {
+        if (pommProgress < 0) {
+          // progress-text
+          document.getElementById('pomm-progress').style.width = '100%';
+          document.getElementById(
+            'progress-text'
+          ).innerHTML = `<h2 id="progress-text">Max Pomms Achieved!</h2>`;
+        } else if (pommProgress < 5) {
           document.getElementById('pomm-progress').style.width = '75%';
         } else if (pommProgress < 10) {
           document.getElementById('pomm-progress').style.width = '50%';

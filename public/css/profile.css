@@ -74,6 +74,18 @@ a {
     padding: 0;
 }
 
+.work-button {
+    font-family: 'Gaegu', cursive;
+    font-size: 25px;
+    padding-top: 0vh;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+    width: 100%;
+    background-color: #FC6B6B;
+    color: black;
+    border: 2px solid black;
+}
+
 .change-profile {
     margin-bottom: 3vh;
 }
