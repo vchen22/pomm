@@ -18,4 +18,6 @@ Stopwatch: https://jsfiddle.net/Daniel_Hug/pvk6p/
 
 Info icon: https://icons.getbootstrap.com/icons/info-circle/
 
+Firebase: https://firebase.google.com/docs
 
+Firebase Help: https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg
