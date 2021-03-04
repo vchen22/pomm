@@ -70,7 +70,7 @@ auth.onAuthStateChanged((user) => {
               handleRemove(9);
             });
         } catch (error) {
-          console.log('Element does not exist');
+          //console.log('Element does not exist');
         }
       });
   } else {

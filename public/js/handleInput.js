@@ -6,7 +6,7 @@ function addTask(e) {
   let data = document.getElementById('task-input').value;
 
   auth.onAuthStateChanged((user) => {
-    console.log(data);
+    //console.log(data);
     if (user) {
       db.collection('users')
         .doc(user.uid)
@@ -27,7 +27,7 @@ function addTask(e) {
                 tasks: dbTasks,
               })
               .then(() => {
-                console.log('done');
+                //console.log('done');
                 document.getElementById('add-task-form').reset();
                 //location.reload();
               });

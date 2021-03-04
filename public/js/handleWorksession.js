@@ -9,13 +9,13 @@ function handleRemove(num) {
         .then((doc) => {
           let dbTasks = doc.data().tasks;
 
-          console.log(dbTasks);
+          //console.log(dbTasks);
 
           // remove from db
           //const index = dbTasks.indexOf(0);
           dbTasks.splice(num, 1);
 
-          console.log(dbTasks);
+          //console.log(dbTasks);
 
           totalTasks++;
 
@@ -101,7 +101,7 @@ auth.onAuthStateChanged((user) => {
               handleRemove(9);
             });
         } catch (error) {
-          console.log('Element does not exist');
+          //console.log('Element does not exist');
         }
       });
   } else {
