@@ -5,6 +5,8 @@
 body {
   height: 100%;
   padding: 15%;
+  text-align: center;
+  background-color:#CAF0F8;
 }
 
 #greeting {
@@ -28,6 +30,7 @@ h2 {
   width: 100%;
   max-width: 330px;
   padding: 15px;
+  display: inline-block;
 }
 
 .form-signin .checkbox {

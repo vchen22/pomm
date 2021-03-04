@@ -18,6 +18,8 @@ auth.onAuthStateChanged((user) => {
         `;
         document.getElementById('greeting').innerHTML = greeting;
 
+        console.log(minutes);
+
         if (minutes > 0) {
           document.getElementById('pomm1').style.visibility = 'visible';
         }

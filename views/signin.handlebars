@@ -23,17 +23,25 @@
     <h2>Welcome back for some immersive study sessions!</h2>
   </div>
   <h2>Sign in to start</h2>
-  <form class="form-signin" action="/home" id="signin-form">
-    <label for="inputEmail" class="sr-only"></label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="sr-only"></label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <button id="submit" class="btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  </form>
+  <div class="container-fluid">
+    <form class="form-signin" action="/home" id="signin-form">
+      <label for="inputEmail" class="sr-only"></label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only"></label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <button id="submit" class="btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+  </div>
+
   <h2>Don't have an account?</h2>
   <a class="btn-lg btn-primary btn-block" href="/signup">
     Sign Up
   </a>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
