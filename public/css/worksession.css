@@ -75,15 +75,22 @@ h2{
     margin-top: 20%;
   }
   
-  /* Remove margins and padding from the list */
+  /* Remove margins and padding from the list
   ul {
     margin: 0px;
     padding: 0;
+  } */
+  ul {
+    margin: 0px;
+    padding: 0;
+    max-height: 300px;
+    overflow: scroll;
   }
   
   li {
     border-radius: 15px;
     margin-bottom: 5px;
+    text-decoration: none;
   }
   
   /* Style the list items */
@@ -94,6 +101,7 @@ h2{
     background: #EBEBEB;
     font-size: 18px;
     transition: 0.2s;
+    width: 95%;
   }
 
   .button {
@@ -116,4 +124,17 @@ h2{
 
   #info {
       margin-top: 2%;
+  }
+
+  ::-webkit-scrollbar {
+    width: auto;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #EBEBEB;
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+    display: none;
   }

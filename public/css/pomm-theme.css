@@ -34,7 +34,7 @@ main {
     position: relative;
 }
 
-.pomm1 {
+#pomm1 {
     position: absolute;
     width: 50px;
     top: 100px;
@@ -42,7 +42,7 @@ main {
     visibility: hidden;
 }
 
-.pomm2 {
+#pomm2 {
     position: absolute;
     width: 50px;
     top: 110px;
@@ -50,7 +50,7 @@ main {
     visibility: hidden;
 }
 
-.pomm3 {
+#pomm3 {
     position: absolute;
     width: 50px;
     top: 120px;
@@ -58,7 +58,7 @@ main {
     visibility: hidden;
 }
 
-.pomm4 {
+#pomm4 {
     position: absolute;
     width: 50px;
     top: 160px;
@@ -66,7 +66,7 @@ main {
     visibility: hidden;
 }
 
-.pomm5 {
+#pomm5 {
     position: absolute;
     width: 50px;
     top: 140px;
@@ -74,7 +74,7 @@ main {
     visibility: hidden;
 }
 
-.pomm6 {
+#pomm6 {
     position: absolute;
     width: 50px;
     top: 100px;
@@ -82,7 +82,7 @@ main {
     visibility: hidden;
 }
 
-.pomm7 {
+#pomm7 {
     position: absolute;
     width: 50px;
     top: 170px;
@@ -90,7 +90,7 @@ main {
     visibility: hidden;
 }
 
-.pomm8 {
+#pomm8 {
     position: absolute;
     width: 50px;
     top: 110px;
@@ -98,7 +98,7 @@ main {
     visibility: hidden;
 }
 
-.pomm9 {
+#pomm9 {
     position: absolute;
     width: 50px;
     top: 70px;
@@ -106,7 +106,7 @@ main {
     visibility: hidden;
 }
 
-.pomm10 {
+#pomm10 {
     position: absolute;
     width: 50px;
     top: 60px;
@@ -309,34 +309,6 @@ main {
     border: 2px solid black;
 }
 
-/* .sign-in {
-    font-family: 'Gaegu', cursive;
-    font-size: 25px;
-    padding-top: 0vh;
-    padding-bottom: 0vh;
-    margin-top: 3vh;
-    width: 100%;
-    background-color: #FC6B6B;
-    color: black;
-    border: 2px solid black;
-}
-
-.create-account {
-    font-family: 'Gaegu', cursive;
-    font-size: 25px;
-    padding-top: 0vh;
-    padding-bottom: 0vh;
-    width: 100%;
-    background-color: #FC6B6B;
-    color: black;
-    border: 2px solid black;
-}
-
-body form {
-    font-family: 'Gaegu', cursive;
-    font-size: 30px;
-} */
-
 body h1 {
     font-family: 'Gaegu', cursive;
     text-align: center;
@@ -344,17 +316,6 @@ body h1 {
     color: #FC6B6B;
     font-size: 90px;
 }
-
-/* grayscaled tree and other images */
-/* img {
-    filter: grayscale(100%);
-} */
-
-/* .pomm-reward {
-    position: relative;
-    left: 250px;
-    bottom: 250px;
-} */
 
 .pomm-counter {
     font-family: 'Gaegu', cursive;

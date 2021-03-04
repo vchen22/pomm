@@ -1,7 +1,8 @@
 {
-  var strike1 = document.getElementById('task1');
-  var strike2 = document.getElementById('task2');
-  var strike3 = document.getElementById('task3');
+  // var strike1 = document.getElementById('task1');
+  // var strike2 = document.getElementById('task2');
+  // var strike3 = document.getElementById('task3');
+
   var start = document.getElementById('start');
   var pause = document.getElementById('pause');
   var info = document.getElementById('info');
@@ -111,12 +112,21 @@ function init() {
   start.addEventListener('click', timer);
   start.addEventListener('click', toggle);
   pause.addEventListener('click', toggle);
-  strike1.addEventListener('click', lineThru1);
-  strike2.addEventListener('click', lineThru2);
-  strike3.addEventListener('click', lineThru3);
+  // strike1.addEventListener('click', lineThru1);
+  // strike2.addEventListener('click', lineThru2);
+  // strike3.addEventListener('click', lineThru3);
   info.addEventListener('click', help);
   breakBtn.addEventListener('click', breakSession);
   breakBtn.addEventListener('click', toggle);
+
+  $("li").click(function() {
+    if ($(this).css("text-decoration") == "none solid rgb(33, 37, 41)") {
+      $(this).css("text-decoration", "line-through");
+    }
+    else {
+      $(this).css("text-decoration", "none");
+    }
+  });
 }
 
 // wait for DOM to load first
