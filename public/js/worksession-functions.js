@@ -111,9 +111,9 @@ function init() {
   start.addEventListener('click', timer);
   start.addEventListener('click', toggle);
   pause.addEventListener('click', toggle);
-  strike1.addEventListener('click', lineThru1);
-  strike2.addEventListener('click', lineThru2);
-  strike3.addEventListener('click', lineThru3);
+  // strike1.addEventListener('click', lineThru1);
+  // strike2.addEventListener('click', lineThru2);
+  // strike3.addEventListener('click', lineThru3);
   info.addEventListener('click', help);
   breakBtn.addEventListener('click', breakSession);
   breakBtn.addEventListener('click', toggle);

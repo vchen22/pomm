@@ -36,7 +36,7 @@
             <button id="break" class="btn-block pause-button shadow">Start Break</button>
         </div>
 
-        <section id="todolist">
+        {{!-- <section id="todolist">
             <section id="list-bg">
                 {{#each taskname}}
                 <ul id="task-list">
@@ -44,6 +44,13 @@
                 </ul>
                 {{/each}}
             </section>
+        </section> --}}
+        <section class="todolist text-center" id="list-bg">
+        <ul>
+            {{#each tasklist}}
+                <li id={{taskid}}>{{taskname}}</li>
+            {{/each}}
+        </ul>
         </section>
 
         <section id="stop">
@@ -67,6 +74,8 @@
             </button>
         </div>
     </main>
+
+    <script type="text/javascript" src="js/todolist-functions.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"

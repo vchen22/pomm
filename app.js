@@ -9,11 +9,12 @@ var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
 const { viewFriends } = require('./routes/friends');
-// const { viewList } = require('./routes/friends');
 const { viewProfile } = require('./routes/profile');
 const { setTimer } = require('./routes/settimer');
 const { viewWorkSession } = require('./routes/worksession');
 const { viewToDoList } = require('./routes/todolist');
+const { add } = require('./routes/addTask');
+const { remove } = require('./routes/removeTask');
 const { viewDummyFriend1 } = require('./routes/dummyFriend1');
 const { viewDummyFriend2 } = require('./routes/dummyFriend2');
 const { viewResults } = require('./routes/results');
@@ -59,6 +60,8 @@ app.get('/settimer', setTimer);
 app.get('/worksession', viewWorkSession);
 app.get('/results', viewResults);
 app.get('/logout', viewLogOut);
+app.get('/addTask', add);
+app.get('removeTask', remove);
 
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));

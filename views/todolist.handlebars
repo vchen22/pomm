@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -19,18 +20,25 @@
 <body>
     <h1>To-do list</h1>
 
-    <section id="list-bg" class="overflow-auto">
-        <ul id="task-list">
-            <li class="shadow">Example: COGS120 A6</li>
-        </ul>
-    </section>
+    <!-- to do list -->
+    <section class="todolist text-center" id="list-bg">
+      <ul>
+      {{#each tasklist}}
+        <li id={{taskid}}>{{taskname}}</li>
+      {{/each}}
+      </ul>
+	</section>
+	
+    <!-- add task button/form -->
+    <form class="add-task" id="add-task-form" role="form" method="get" action="/addTask">
+		<label for="taskname"></label>
+		<input type="text" id="task-input" placeholder="Task Name" name="taskname" required/>
 
-    <div id="add-task" class="header text-center">
-        <input type="text" id="task-input" placeholder="Task Name">
-        <span onclick="newTask()" class="add-btn">Add</span>
-    </div>
+		<input type="submit" id="add-btn" value="Add Task">
+	</form>
+	
     
-    <section id="buttons">
+	<section id="buttons">
       <div class="button fixed-top d-flex justify-content-start">
         <a href="/home" class="previous shadow-sm rounded">&#8249; Back</a>
       </div>
@@ -39,56 +47,6 @@
       </div>
     </section>
 
-<script>
-// Create a "close" button and append it to each list item
-var taskList = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < taskList.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  taskList[i].appendChild(span);
-}
-
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
-
-// Create a new list item when clicking on the "Add" button
-function newTask() {
-  var li = document.createElement("li");
-  li.classList.add('shadow');
-  var inputValue = document.getElementById("task-input").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("task-list").appendChild(li);
-  }
-  document.getElementById("task-input").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
-</script>
-
+	<script type="text/javascript" src="js/todolist-functions.js"></script>
 </body>
 </html>
