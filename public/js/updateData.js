@@ -1,4 +1,6 @@
-document.getElementById('end-button').addEventListener('click', endListener);
+// document.getElementById('end-button').addEventListener('click', endListener);
+
+$('#end-button').click(endListener);
 
 function endListener(e) {
   e.preventDefault();
@@ -56,7 +58,8 @@ function endListener(e) {
               sessions: dbSessions,
             })
             .then(() => {
-              window.location.href = '/results';
+              // window.location.href = '/results';
+              $(location).attr('href', './results');
             });
         });
     } else {

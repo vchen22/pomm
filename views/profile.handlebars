@@ -5,6 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,7 +16,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="css/profile.css" />
-
 </head>
 
 <body>
@@ -47,11 +47,7 @@
 		</div>
 	</div>
 
-	<section id="buttons">
-		<div class="button fixed-top d-flex justify-content-start">
-			<a href="/home" class="previous shadow-sm rounded">&#8249; Back</a>
-		</div>
-	</section>
+	{{> navButton}}
 
 	<h2 id="progress-text">Progress To Next Pomm:</h2>
 	<div class="progress">
@@ -72,23 +68,7 @@
 			id="logout">Sign Out</a>
 	</div>
 
-	<div class="navbar">
-		<div class="col">
-			<a class="btn btn-default icon-btn" href="/profile">
-				<img src="img/user.png" class="icon-pic" />
-			</a>
-		</div>
-		<div class="col">
-			<a class="btn btn-default icon-btn" href="/home">
-				<img src="img/home.png" class="icon-pic" />
-			</a>
-		</div>
-		<div class="col">
-			<a class="btn btn-default icon-btn" href="/friends">
-				<img src="img/friends.png" class="icon-pic" />
-			</a>
-		</div>
-	</div>
+	{{> navBar}}
 
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
@@ -130,6 +110,12 @@
 	<script type="text/javascript" src="js/authLogout.js"></script>
 	<script type="text/javascript" src="js/profileFill.js"></script>
 	<script type="text/javascript" src="js/fileUpload.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$("#back").attr("href", "/home");
+		$("#next").remove();
+		});
+  </script>
 
 </body>
 

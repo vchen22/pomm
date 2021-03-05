@@ -47,7 +47,8 @@ auth.onAuthStateChanged((user) => {
 
         //listHTML = listHTML + '</ul>';
 
-        document.getElementById('todoList').innerHTML = listHTML;
+        // document.getElementById('todoList').innerHTML = listHTML;
+        $('#todoList').html(listHTML);
 
         try {
           document

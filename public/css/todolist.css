@@ -1,20 +1,5 @@
-* {
-    font-family: 'Gaegu', cursive;
-    box-sizing: border-box;
-}
-
 body {
-  padding: 10%;
-  margin-top: 5%;
   background-color: #CAF0F8;
-}
-
-h1 {
-  text-align: center;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  color: #FC6B6B;
-  font-size: 40px;
-  margin-top: 5%;
 }
 
 #list-bg {
@@ -60,18 +45,6 @@ ul li {
   transition: 0.2s;
   width: 95%;
 }
-  
-  /* make the list items unselectable */
-  /* -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; 
-}
-
-/* Set all odd list items to a different color (zebra-stripes) */
-/* ul li:nth-child(odd) {
-  background: #f9f9f9;
-} */
 
 /* Style the close button */
 .close {
@@ -152,30 +125,4 @@ a {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
-}
-
-.button {
-  margin: 3%;
-  margin-top: 4%;
-  margin-left: 6%;
-  margin-right: 6%;
-  display: inline-block;
-  padding: 0;
-}
-
-.next {
-  text-align: right;
-  background-color: #508D3C;
-  color: white;
-  font-size: 16px;
-  border: 1px solid slategray;
-  margin-bottom: 10%;
-}
-
-.previous {
-  text-align: left;
-  background-color: whitesmoke;
-  color: black;
-  font-size: 16px;
-  border: 1px solid slategray;
 }

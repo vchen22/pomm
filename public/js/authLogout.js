@@ -1,8 +1,14 @@
 // logout
-const logout = document.querySelector('#logout');
+// const logout = document.querySelector('#logout');
 
-logout.addEventListener('click', (e) => {
+// logout.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   auth.signOut();
+//   window.location.href = '/logout';
+// });
+
+$('#logout').click( (e) => {
   e.preventDefault();
   auth.signOut();
-  window.location.href = '/logout';
+  $(location).attr('href', './logout');
 });

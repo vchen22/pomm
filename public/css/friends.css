@@ -1,19 +1,5 @@
-* {
-    font-family: 'Gaegu', cursive;
-}
-
 body {
-    padding: 10%;
-    margin-top: 5%;
     background-color:#CAF0F8;
-}
-
-h1 {
-  text-align: center;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  color: #FC6B6B;
-  font-size: 40px;
-  margin-top: 5%;
 }
 
 .pfp {
@@ -40,23 +26,6 @@ a {
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
-}
-
-.button {
-    margin: 3%;
-    margin-top: 4%;
-    margin-left: 6%;
-    margin-right: 6%;
-    display: inline-block;
-    padding: 0;
-}
-
-.previous {
-    text-align: left;
-    background-color: whitesmoke;
-    color: black;
-    font-size: 16px;
-    border: 1px solid slategray;
 }
 
 .navbar {

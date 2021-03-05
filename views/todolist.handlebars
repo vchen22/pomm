@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/todolist.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
   <title>To Do List</title>
 </head>
 
@@ -36,15 +37,8 @@
     <button class="btn btn-primary" id="add-btn">Add Task</button>
   </form>
 
-
-  <section id="buttons">
-    <div class="button fixed-top d-flex justify-content-start">
-      <a href="/home" class="previous shadow-sm rounded">&#8249; Back</a>
-    </div>
-    <div class="button fixed-bottom d-flex justify-content-end">
-      <a href="/worksession" class="next shadow-sm rounded">&#8250; Next</a>
-    </div>
-  </section>
+  {{!-- back/next buttons partials --}}
+  {{> navButton}}
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
@@ -82,12 +76,14 @@
     // update firestore settings
     db.settings({ timestampsInSnapshots: true });
   </script>
-
-  {{!--
-  <script type="text/javascript" src="js/todolist-functions.js"></script> --}}
-
   <script type="text/javascript" src="js/handleInput.js"></script>
   <script type="text/javascript" src="js/todoFill.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#back").attr("href", "/home");
+      $("#next").attr("href", "/worksession");
+    });
+  </script>
 </body>
 
 </html>

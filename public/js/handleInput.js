@@ -1,9 +1,13 @@
-document.getElementById('add-btn').addEventListener('click', addTask);
+// document.getElementById('add-btn').addEventListener('click', addTask);
+
+$("#add-btn").click(addTask);
+
 
 function addTask(e) {
   e.preventDefault();
 
-  let data = document.getElementById('task-input').value;
+  // let data = document.getElementById('task-input').value;
+  let data = $('#task-input').val();
 
   auth.onAuthStateChanged((user) => {
     //console.log(data);
