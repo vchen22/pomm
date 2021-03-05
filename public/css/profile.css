@@ -26,6 +26,13 @@ h1 {
     margin-top: 5%;
   }
 
+h3 {
+    background-color: #EBEBEB;
+    padding: 5%;
+    padding-bottom: 0;
+    border-radius: 10px;
+}
+
 #stats {
     margin-bottom: 9%;
 }
@@ -53,11 +60,6 @@ input {
     left: 210px;
 }
 
-/* #friend1-status {
-    background-color: #ef4040;
-}
-*/
-
 a {
     align-items: left;
     text-decoration: none;
@@ -75,19 +77,18 @@ a {
 }
 
 .work-button {
-    font-family: 'Gaegu', cursive;
     font-size: 25px;
     padding-top: 0vh;
     margin-top: 2vh;
     margin-bottom: 6vh;
-    width: 100%;
-    background-color: #FC6B6B;
+    background-color: #EBEBEB;
     color: black;
     border: 2px solid black;
 }
 
 .change-profile {
     margin-bottom: 3vh;
+    background-color: #EBEBEB;
 }
 
 .previous {
@@ -101,6 +102,10 @@ a {
   
 .round {
     border-radius: 50%;
+}
+
+#logout {
+    background-color: #FC6B6B;
 }
 
 .navbar {
@@ -119,4 +124,25 @@ a {
 .icon-btn {
     padding-top: 1vh;
     outline: 1px solid black;
+}
+
+#info-btn {
+    background-color: #CAF0F8;
+}
+
+.progress {
+    background-color: white;
+}
+
+#infoDialog {
+    width: 65%;
+    position: absolute;
+    z-index: 1000;
+    border-radius: 10px;
+  }
+
+#infoDialogButton {
+    border-radius: 10px;
+    background-color: #EBEBEB;
+    z-index: 1001;
 }

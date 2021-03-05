@@ -5,5 +5,5 @@
 //var data = require('../taskname.json');
 
 exports.viewWorkSession = function (req, res) {
-  res.render('worksession', data);
+  res.render('worksession');
 };

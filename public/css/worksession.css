@@ -1,17 +1,12 @@
-* {
-    font-family: 'Gaegu', cursive;
-}
-
 body {
-    padding: 10%;
-    margin-top: 5%;
     background-color: #CAF0F8;
+    margin-top: 0;
 }
 
 #stopwatch {
     border: 2px solid black;
     border-radius: 10px;
-    margin-top: 10%;
+    margin-top: 6%;
 }
 
 .pause-button {
@@ -41,19 +36,11 @@ body {
 
 .stop-button {
     font-size: 20px;
-    margin-top: 8vh;
+    margin-top: 3vh;
     width: 80%;
     background-color: whitesmoke;
     border: 1px solid black;
     border-radius: 10px;
-}
-
-h1 {
-    text-align: center;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-    color: #FC6B6B;
-    font-size: 40px;
-    margin-top: 5%;
 }
 
 h2{
@@ -66,24 +53,24 @@ h2{
   
 /* TO DO LIST STYLE - need to take some out*/
 /* Include the padding and border in an element's total width and height */
-
-  
   #list-bg {
     background-color: #C4C4C4;
     border-radius: 20px;
     padding: 10px;
-    margin-top: 20%;
+    margin-top: 10%;
   }
-  
-  /* Remove margins and padding from the list */
+ 
   ul {
     margin: 0px;
     padding: 0;
+    max-height: 300px;
+    overflow: scroll;
   }
   
   li {
     border-radius: 15px;
     margin-bottom: 5px;
+    text-decoration: none;
   }
   
   /* Style the list items */
@@ -94,26 +81,34 @@ h2{
     background: #EBEBEB;
     font-size: 18px;
     transition: 0.2s;
-  }
-
-  .button {
-    margin: 3%;
-    margin-top: 4%;
-    margin-left: 6%;
-    margin-right: 6%;
-    display: inline-block;
-    padding: 0;
-  }
-
-  .previous {
-    text-align: left;
-    background-color: whitesmoke;
-    color: black;
-    font-size: 16px;
-    border: 1px solid slategray;
-    padding: 8px 16px;
+    width: 95%;
   }
 
   #info {
       margin-top: 2%;
   }
+
+  ::-webkit-scrollbar {
+    width: auto;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #EBEBEB;
+  }
+  
+  ::-webkit-scrollbar-track-piece {
+    display: none;
+  }
+
+#pauseDialog, #infoDialog {
+  width: 65%;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+#dialogButton, #infoDialogButton {
+  border-radius: 10px;
+  background-color: #EBEBEB;
+}

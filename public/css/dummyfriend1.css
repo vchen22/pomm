@@ -85,3 +85,10 @@ a {
     font-size: 16px;
     border: 1px solid slategray;
   }
+
+  h3 {
+    background-color: #EBEBEB;
+    padding: 5%;
+    padding-bottom: 0;
+    border-radius: 10px;
+}

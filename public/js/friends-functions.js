@@ -1,13 +1,14 @@
-{   
-    var info = document.getElementById('info');
+function infoPopUp(){
+    $("#infoDialog").show();
 }
 
-function help(){
-    alert("The red dot means your friend is in a pomm session. \r\n The green dot means your friend is not in a pomm session.");
+function infoClose(){
+    $("#infoDialog").css("display", "none");
 }
 
 function init(){
-    info.addEventListener('click', help);
+    $("#infoBtn").click(infoPopUp);
+    $("#infoDialogButton").click(infoClose);
 }
 
 // wait for DOM to load first

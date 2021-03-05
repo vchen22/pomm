@@ -121,7 +121,7 @@
 // });
 
 // sign in
-const signinForm = document.querySelector('#signin-form');
+// const signinForm = document.querySelector('#signin-form');
 
 signinForm.addEventListener('submit', (e) => {
   e.preventDefault();

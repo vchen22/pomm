@@ -1,20 +1,5 @@
-* {
-    font-family: 'Gaegu', cursive;
-    box-sizing: border-box;
-}
-
 body {
-  padding: 10%;
-  margin-top: 5%;
   background-color: #CAF0F8;
-}
-
-h1 {
-  text-align: center;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  color: #FC6B6B;
-  font-size: 40px;
-  margin-top: 5%;
 }
 
 #list-bg {
@@ -28,6 +13,21 @@ h1 {
 ul {
   margin: 0px;
   padding: 0;
+  max-height: 485px;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: auto;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #EBEBEB;
+}
+
+::-webkit-scrollbar-track-piece {
+  display: none;
 }
 
 li {
@@ -42,27 +42,24 @@ ul li {
   list-style-type: none;
   background: #EBEBEB;
   font-size: 18px;
-  /* transition: 0.2s; */
-  
-  /* make the list items unselectable */
-  /* -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; */
+  transition: 0.2s;
+  width: 95%;
 }
-
-/* Set all odd list items to a different color (zebra-stripes) */
-/* ul li:nth-child(odd) {
-  background: #f9f9f9;
-} */
 
 /* Style the close button */
 .close {
   position: absolute;
-  right: 0;
+  right: 3%;
   top: 0;
   padding: 8px 16px;
+  display: block;
 }
+
+.list-button {
+  padding-left: 10px;
+  text-align: right;
+}
+
 
 /* Style the header */
 .header {
@@ -92,9 +89,10 @@ input {
 }
 
 /* Style the "Add" button */
-.add-btn {
+#add-btn {
   padding: 10px;
-  width: 25%;
+  /* width: 25%; */
+  width: 30%;
   background: #d9d9d9;
   color: #555;
   float: left;
@@ -106,7 +104,7 @@ input {
   border: 1px solid black;
 }
 
-.add-btn:hover {
+#add-btn:hover {
   background-color: #bbb;
 }
 
@@ -116,35 +114,15 @@ input {
   width: 40vw;
 }
 
+.add-task {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
 a {
   align-items: right;
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
-}
-
-.button {
-  margin: 3%;
-  margin-top: 4%;
-  margin-left: 6%;
-  margin-right: 6%;
-  display: inline-block;
-  padding: 0;
-}
-
-.next {
-  text-align: right;
-  background-color: #508D3C;
-  color: white;
-  font-size: 16px;
-  border: 1px solid slategray;
-  margin-bottom: 10%;
-}
-
-.previous {
-  text-align: left;
-  background-color: whitesmoke;
-  color: black;
-  font-size: 16px;
-  border: 1px solid slategray;
 }
