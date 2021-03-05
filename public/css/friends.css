@@ -45,3 +45,15 @@ a {
     padding-top: 1vh;
     outline: 1px solid black;
 }
+
+#infoDialog {
+    width: 65%;
+    position: absolute;
+    z-index: 1000;
+    border-radius: 10px;
+}
+  
+#infoDialogButton {
+    border-radius: 10px;
+    background-color: #EBEBEB;
+}
