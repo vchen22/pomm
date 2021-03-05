@@ -6,8 +6,8 @@
 //     res.render('profile');
 // };
 
-var data = require('../userprofile.json');
+// var data = require('../userprofile.json');
 
 exports.viewProfile = function(req, res) {
-    res.render('profile', data);
+    res.render('profile');
 };
