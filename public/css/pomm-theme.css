@@ -31,7 +31,7 @@ main {
     position: relative;
 }
 
-#pomm1 {
+.pomm1 {
     position: absolute;
     width: 50px;
     top: 200px;
@@ -39,7 +39,7 @@ main {
     visibility: hidden;
 }
 
-#pomm2 {
+.pomm2 {
     position: absolute;
     width: 50px;
     top: 210px;
@@ -47,7 +47,7 @@ main {
     visibility: hidden;
 }
 
-#pomm3 {
+.pomm3 {
     position: absolute;
     width: 50px;
     top: 220px;
@@ -55,7 +55,7 @@ main {
     visibility: hidden;
 }
 
-#pomm4 {
+.pomm4 {
     position: absolute;
     width: 50px;
     top: 260px;
@@ -63,7 +63,7 @@ main {
     visibility: hidden;
 }
 
-#pomm5 {
+.pomm5 {
     position: absolute;
     width: 50px;
     top: 240px;
@@ -71,7 +71,7 @@ main {
     visibility: hidden;
 }
 
-#pomm6 {
+.pomm6 {
     position: absolute;
     width: 50px;
     top: 200px;
@@ -79,7 +79,7 @@ main {
     visibility: hidden;
 }
 
-#pomm7 {
+.pomm7 {
     position: absolute;
     width: 50px;
     top: 270px;
@@ -87,7 +87,7 @@ main {
     visibility: hidden;
 }
 
-#pomm8 {
+.pomm8 {
     position: absolute;
     width: 50px;
     top: 210px;
@@ -95,7 +95,7 @@ main {
     visibility: hidden;
 }
 
-#pomm9 {
+.pomm9 {
     position: absolute;
     width: 50px;
     top: 170px;
@@ -103,7 +103,7 @@ main {
     visibility: hidden;
 }
 
-#pomm10 {
+.pomm10 {
     position: absolute;
     width: 50px;
     top: 160px;

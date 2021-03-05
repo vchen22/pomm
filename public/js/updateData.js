@@ -58,8 +58,9 @@ function endListener(e) {
               sessions: dbSessions,
             })
             .then(() => {
-              // window.location.href = '/results';
-              $(location).attr('href', './results');
+              localStorage.setItem('totalMinutes', totalMinutes);
+              localStorage.setItem('totalTasks', totalTasks);
+              window.location.href = '/results';
             });
         });
     } else {

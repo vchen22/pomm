@@ -19,6 +19,8 @@ function handleRemove(num) {
 
           totalTasks++;
 
+          console.log(totalTasks);
+
           db.collection('users').doc(user.uid).update({
             tasks: dbTasks,
           });
@@ -107,5 +109,15 @@ auth.onAuthStateChanged((user) => {
       });
   } else {
     console.log('user not logged in');
+  }
+});
+
+document.getElementById('back-btn').addEventListener('click', function () {
+  if (
+    confirm(
+      "Are you sure you want to leave the session early? You'll lose all progresson towards your pomms."
+    )
+  ) {
+    window.location.href = '/todolist';
   }
 });
