@@ -36,15 +36,6 @@
             <button id="break" class="btn-block pause-button shadow">Start Break</button>
         </div>
 
-        {{!-- <section id="todolist">
-            <section id="list-bg">
-                {{#each taskname}}
-                <ul id="task-list">
-                    <li class="task-name shadow" id="{{id}}">{{name}}</li>
-                </ul>
-                {{/each}}
-            </section>
-        </section> --}}
         <section class="todolist text-center" id="list-bg">
             <ul id="todoList">
 
@@ -59,7 +50,7 @@
         </section>
 
         <div class="button fixed-top d-flex justify-content-between">
-            <a href="/todolist" class="previous shadow-sm rounded text-decoration-none">&#8249; Back</a>
+            <a id="back-btn" class="previous shadow-sm rounded text-decoration-none">&#8249; Back</a>
             {{!-- info button --}}
             <button type="button" class="bg-transparent border-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
