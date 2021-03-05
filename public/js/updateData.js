@@ -56,6 +56,8 @@ function endListener(e) {
               sessions: dbSessions,
             })
             .then(() => {
+              localStorage.setItem('totalMinutes', totalMinutes);
+              localStorage.setItem('totalTasks', totalTasks);
               window.location.href = '/results';
             });
         });

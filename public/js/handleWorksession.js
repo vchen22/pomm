@@ -19,6 +19,8 @@ function handleRemove(num) {
 
           totalTasks++;
 
+          console.log(totalTasks);
+
           db.collection('users').doc(user.uid).update({
             tasks: dbTasks,
           });
