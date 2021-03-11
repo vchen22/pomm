@@ -24,7 +24,8 @@ h1 {
     color: black;
     font-size: 40px;
     margin-top: 5%;
-  }
+    text-shadow: none;
+}
 
 h3 {
     background-color: #EBEBEB;
@@ -90,15 +91,6 @@ a {
     margin-bottom: 3vh;
     background-color: #EBEBEB;
 }
-
-.previous {
-    text-align: left;
-    background-color: whitesmoke;
-    color: black;
-    font-size: 16px;
-    border: 1px solid slategray;
-    padding: 8px 16px;
-}
   
 .round {
     border-radius: 50%;
@@ -141,8 +133,7 @@ a {
     border-radius: 10px;
   }
 
-#infoDialogButton {
+#info-close {
     border-radius: 10px;
     background-color: #EBEBEB;
-    z-index: 1001;
 }

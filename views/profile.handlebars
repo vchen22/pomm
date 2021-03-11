@@ -7,15 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	{{!-- <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
-	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script> --}}
 
 	<!-- dialog scripts -->
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	{{!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" /> --}}
 
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -24,17 +24,31 @@
 	<!-- Gaegu Font -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
-
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<link rel="stylesheet" type="text/css" href="css/profile.css" />
 </head>
 
 <body>
 
-	<div id="app-info-dialog">
-		<p id="dialogText">For every 20 minutes you work in a session, you can earn 1 pomm. Let's get working!</p>
-		<button id="close-info" class="btn-block shadow">
-		</button>
-	</div>
+	<section id="buttons">
+		<div class="button fixed-top d-flex justify-content-end">
+			{{!-- info button --}}
+			<button id="info-btn" type="button" class="border-0">
+				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-info-circle"
+					id="info" viewBox="0 0 16 16">
+					<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+					<path
+						d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+				</svg>
+			</button>
+		</div>
+	</section>
+
+	<dialog id="infoDialog" class="text-center">
+		<p id="infoDialogText">For every 20 minutes you work in a session, you can earn 1 pomm. Let's get working</p>
+		{{!-- <input id="info-close" type="button" class="text-center" value="Close"> --}}
+		<button id="info-close">Close</button>
+	</dialog>
 
 	<img src="/img/user.png" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
 
@@ -62,18 +76,6 @@
 				<h3 id="minutes">{{studymins}}</h3>
 			</div>
 		</div>
-	</div>
-
-	<div class="button fixed-top d-flex justify-content-end">
-		{{!-- info button --}}
-		<button type="button" class="border-0" id="info-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-info-circle"
-				id="info" viewBox="0 0 16 16">
-				<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-				<path
-					d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-			</svg>
-		</button>
 	</div>
 
 	<h2 id="progress-text">Progress To Next Pomm: 0%</h2>
@@ -132,10 +134,10 @@
 		db.settings({ timestampsInSnapshots: true });
 	</script>
 
+	<script type="text/javascript" src="js/profile.js"></script>
 	<script type="text/javascript" src="js/authLogout.js"></script>
 	<script type="text/javascript" src="js/profileFill.js"></script>
 	<script type="text/javascript" src="js/fileUpload.js"></script>
-	<script type="text/javascript" src="js/profile.js"></script>
 
 </body>
 

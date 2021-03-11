@@ -38,6 +38,18 @@
             <input id="infoDialogButton" type="button" class="text-center" value="Close">
         </dialog>
 
+        <dialog id="backDialog" class="text-center shadow-lg">
+            <p id="backDialogText">Are you sure you want to leave the session early? You'll lose all progresson towards your pomms.</p>
+            <input id="back-cancel" type="button" class="text-center" value="Cancel">
+            <a id="back-confirm" class="text-center">Confirm</a>
+        </dialog>
+
+        <dialog id="deleteDialog" class="text-center shadow-lg">
+            <p id="deleteDialogText">Do you want to take off this task off your to-do-list?</p>
+            <input id="delete-cancel" type="button" class="text-center" value="Cancel">
+            <input id="delete-confirm" type="button" class="text-center" value="Confirm">
+        </dialog>
+
         <div class="d-flex justify-content-center text-center">
             <h2 id="stopwatch" class="text-center d-block">00:00:00</h2>
         </div>
@@ -61,7 +73,7 @@
         </section>
 
         <div class="button fixed-top d-flex justify-content-between">
-            <a id="back-btn" class="previous shadow-sm rounded text-decoration-none">&#8249; Back</a>
+            <a id="back" class="previous shadow-sm rounded text-decoration-none">&#8249; Back</a>
             {{!-- info button --}}
             <button type="button" class="bg-transparent border-0" id="infoBtn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -73,6 +85,13 @@
             </button>
         </div>
     </main>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#back-confirm").attr("href", "/todolist");
+    });
+  </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
