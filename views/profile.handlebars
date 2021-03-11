@@ -8,7 +8,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
- 
+
 	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
 
 	<!-- dialog scripts -->
@@ -18,8 +18,8 @@
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" />
 
 	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" 
-	integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
 	<!-- Gaegu Font -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,7 +36,7 @@
 		</button>
 	</div>
 
-	<img src="/img/{{image}}" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
+	<img src="/img/user.png" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
 
 	<h1 id="name"></h1>
 	<div id="stats" class="container">
@@ -67,8 +67,8 @@
 	<div class="button fixed-top d-flex justify-content-end">
 		{{!-- info button --}}
 		<button type="button" class="border-0" id="info-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-				class="bi bi-info-circle" id="info" viewBox="0 0 16 16">
+			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-info-circle"
+				id="info" viewBox="0 0 16 16">
 				<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
 				<path
 					d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
@@ -83,8 +83,7 @@
 	</div>
 
 	<div class="text-center">
-		<button
-			class="btn btn-primary btn-lg work-button text-decoration-none shadow change-profile"
+		<button class="btn btn-primary btn-lg work-button text-decoration-none shadow change-profile"
 			onclick="document.getElementById('file-input').click();">Change Profile Picture</button>
 		<input id="file-input" type="file" name="name" style="display: none;" accept="image/*" />
 	</div>
@@ -94,7 +93,7 @@
 	</div>
 
 	{{> navBar}}
-	
+
 
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
