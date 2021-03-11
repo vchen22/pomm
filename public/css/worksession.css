@@ -88,7 +88,7 @@ h2{
       margin-top: 2%;
   }
 
-  ::-webkit-scrollbar {
+  /* ::-webkit-scrollbar {
     width: auto;
   }
   
@@ -99,7 +99,7 @@ h2{
   
   ::-webkit-scrollbar-track-piece {
     display: none;
-  }
+  } */
 
 #pauseDialog, #infoDialog {
   width: 65%;

@@ -17,7 +17,7 @@ ul {
   overflow: scroll;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: auto;
 }
 
@@ -28,7 +28,7 @@ ul {
 
 ::-webkit-scrollbar-track-piece {
   display: none;
-}
+} */
 
 li {
   border-radius: 15px;
