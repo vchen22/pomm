@@ -1,6 +1,5 @@
 body {
     background-color: #CAF0F8;
-    margin-top: 0;
 }
 
 #stopwatch {
@@ -111,4 +110,37 @@ h2{
 #dialogButton, #infoDialogButton {
   border-radius: 10px;
   background-color: #EBEBEB;
+}
+
+#back {
+  text-align: left;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 16px;
+  border: 1px solid slategray;
+  margin: 3%;
+  padding: 7px 15px;
+}
+
+#backDialog {
+  width: 65%;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+#back-cancel, #back-confirm {
+  border-radius: 10px;
+  background-color: #EBEBEB;
+  text-decoration: none;
+  color: black;
+}
+
+#back-confirm {
+  /* padding-left: 2px;
+  padding-right: 2px; */
+  border: 1px solid;
+  padding: 4px 6px;
+  border-width: 2px;
+  border-style: outset;
 }

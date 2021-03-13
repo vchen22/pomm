@@ -1,9 +1,9 @@
-main {
-    background-color:#CAF0F8;
+body {
+    margin-bottom: 13%;
 }
 
-body {
-    padding-bottom: 10%; 
+main {
+    background-color:#CAF0F8;
 }
 
 .sky-blue {
@@ -24,7 +24,7 @@ body {
 }
 
 .icon-pic {
-    width: 40%;
+    width: 35%;
 }
 
 .icon-btn {

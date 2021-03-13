@@ -1,5 +1,10 @@
 body {
   background-color: #CAF0F8;
+  margin-bottom: 20%;
+}
+
+h1 {
+  margin-top: 0;
 }
 
 #list-bg {
@@ -7,13 +12,14 @@ body {
   border-radius: 20px;
   padding: 10px;
   max-height: 500px;
+  margin-top: 5%;
 }
 
 /* Remove margins and padding from the list */
 ul {
   margin: 0px;
   padding: 0;
-  max-height: 485px;
+  max-height: 390px;
   overflow: scroll;
 }
 

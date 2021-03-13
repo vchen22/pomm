@@ -23,7 +23,7 @@ auth.onAuthStateChanged((user) => {
           document
             .getElementById('remove0')
             .addEventListener('click', function () {
-              handleRemove(0);
+                handleRemove(0);
             });
           document
             .getElementById('remove1')
