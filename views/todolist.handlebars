@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  
+  {{> backButton}}
   <!-- to do list -->
   <section class="todolist text-center" id="list-bg">
     <h1>To-do list</h1>
@@ -37,8 +37,7 @@
     <button class="btn btn-primary" id="add-btn">Add Task</button>
   </form>
 
-  {{!-- back/next buttons partials --}}
-  {{> navButton}}
+  {{> nextButton}}
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>

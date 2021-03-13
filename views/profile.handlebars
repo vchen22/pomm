@@ -29,9 +29,8 @@
 </head>
 
 <body>
-
 	<section id="buttons">
-		<div class="button fixed-top d-flex justify-content-end">
+		<div class="button d-flex justify-content-end">
 			{{!-- info button --}}
 			<button id="info-btn" type="button" class="border-0">
 				<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-info-circle"
@@ -44,14 +43,14 @@
 		</div>
 	</section>
 
+	<img src="/img/user.png" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
+
 	<dialog id="infoDialog" class="text-center">
 		<p id="infoDialogText">For every 20 minutes you work in a session, you can earn 1 pomm. Let's get working</p>
 		{{!-- <input id="info-close" type="button" class="text-center" value="Close"> --}}
 		<button id="info-close">Close</button>
 	</dialog>
-
-	<img src="/img/user.png" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
-
+	
 	<h1 id="name"></h1>
 	<div id="stats" class="container">
 		<div class="row">

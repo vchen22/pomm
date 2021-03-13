@@ -16,9 +16,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="css/dummyfriend1.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 
 <body>
+	{{> backButton}}
     <img src="/img/{{image}}" alt="profile pic" class="img-thumbnail rounded-circle d-block mx-auto" id="pfp">
 	{{!-- <div class="status">
 		<span class="dot"></span>
@@ -36,13 +38,11 @@
 			<div class="col text-center"><h3>{{studymins}}</h3></div>
 		</div>
 	</div>
-	{{> navButton}}
 </body>
 
 <script type="text/javascript">
 	$(document).ready(function(){
       $("#back").attr("href", "/friends");
-      $("#next").remove();
     });
 </script>
 
