@@ -24,7 +24,8 @@ h1 {
     color: black;
     font-size: 40px;
     margin-top: 5%;
-  }
+    text-shadow: none;
+}
 
 h3 {
     background-color: #EBEBEB;
@@ -67,15 +68,6 @@ a {
     padding: 8px 16px;
 }
 
-.button {
-    margin: 3%;
-    margin-top: 4%;
-    margin-left: 6%;
-    margin-right: 6%;
-    display: inline-block;
-    padding: 0;
-}
-
 .work-button {
     font-size: 25px;
     padding-top: 0vh;
@@ -89,15 +81,6 @@ a {
 .change-profile {
     margin-bottom: 3vh;
     background-color: #EBEBEB;
-}
-
-.previous {
-    text-align: left;
-    background-color: whitesmoke;
-    color: black;
-    font-size: 16px;
-    border: 1px solid slategray;
-    padding: 8px 16px;
 }
   
 .round {
@@ -118,7 +101,7 @@ a {
 }
 
 .icon-pic {
-    width: 40%;
+    width: 35%;
 }
 
 .icon-btn {
@@ -141,8 +124,7 @@ a {
     border-radius: 10px;
   }
 
-#infoDialogButton {
+#info-close {
     border-radius: 10px;
     background-color: #EBEBEB;
-    z-index: 1001;
 }

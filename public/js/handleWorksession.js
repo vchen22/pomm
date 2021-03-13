@@ -114,12 +114,27 @@ auth.onAuthStateChanged((user) => {
   }
 });
 
-document.getElementById('back-btn').addEventListener('click', function () {
-  if (
-    confirm(
-      "Are you sure you want to leave the session early? You'll lose all progresson towards your pomms."
-    )
-  ) {
-    window.location.href = '/todolist';
-  }
-});
+// document.getElementById('back').addEventListener('click', function () {
+//   if (
+//     confirm(
+//       "Are you sure you want to leave the session early? You'll lose all progresson towards your pomms."
+//     )
+//   ) {
+//     window.location.href = '/todolist';
+//   }
+// });
+
+function backPopUp(){
+  $("#backDialog").show();
+}
+
+function backClose(){
+  $("#backDialog").css("display", "none");
+}
+
+function init(){
+  $("#back").click(backPopUp);
+  $("#back-cancel").click(backClose);
+}
+
+window.addEventListener('DOMContentLoaded', init);

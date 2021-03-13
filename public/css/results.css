@@ -14,9 +14,7 @@ body {
 
 body h2 {
     text-align: left;
-    color: black;
     font-size: 24px;
-    padding-left: 3vh;
 }
 
 h1 {
@@ -30,7 +28,10 @@ h1 {
 .result-list{
     background-color: white;
     border-radius: 10px;
-    height: 50vh;
+    height: 30vh;
+    padding: 5%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .bullet{
