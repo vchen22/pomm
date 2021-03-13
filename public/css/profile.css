@@ -128,3 +128,17 @@ a {
     border-radius: 10px;
     background-color: #EBEBEB;
 }
+
+#successDialog {
+    width: 65%;
+    position: absolute;
+    z-index: 1000;
+    border-radius: 10px;
+  }
+  
+  #successConfirm {
+    border-radius: 10px;
+    background-color: #EBEBEB;
+    text-decoration: none;
+    color: black;
+  }

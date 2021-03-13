@@ -145,9 +145,15 @@ signinForm.addEventListener('submit', (e) => {
       var errorMessage = error.message;
 
       if (errorCode === 'auth/user-not-found') {
-        alert('Email/Password Combination Not Found. Please Try Again.');
+        $("#authDialog").show();
+        $("#authConfirm").click(function(){
+          $("#authDialog").css("display", "none");
+        })
       } else if (errorCode === 'auth/wrong-password') {
-        alert('Email/Password Combination Not Found. Please Try Again.');
+        $("#authDialog").show();
+        $("#authConfirm").click(function(){
+          $("#authDialog").css("display", "none");
+        })
       }
 
       // ... look at all the possible Error codes in the doc to handle the different cases

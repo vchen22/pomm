@@ -12,7 +12,10 @@ signupForm.addEventListener('submit', (e) => {
   const last = signupForm['signup-last'].value;
 
   if (password !== confirm) {
-    alert("Passwords don't match!");
+    $("#passwordDialog").show();
+    $("#passwordConfirm").click(function(){
+      $("#passwordDialog").css("display", "none");
+    });
   } else {
     // sign up the user
     auth
@@ -39,13 +42,20 @@ signupForm.addEventListener('submit', (e) => {
         var errorMessage = error.message;
 
         if (errorCode === 'auth/weak-password') {
-          alert(
-            'Password Not Strong Enough. Please Create A Password With At Least 6 Characters.'
-          );
+          $("#weakDialog").show();
+          $("#weakConfirm").click(function(){
+            $("#weakDialog").css("display", "none");
+          });
         } else if (errorCode === 'auth/invalid-email') {
-          alert('Email Address Not Valid. Please Enter A Valid Email.');
+          $("#invalidDialog").show();
+          $("#invalidConfirm").click(function(){
+            $("#invalidDialog").css("display", "none");
+          });
         } else if (errorCode === 'auth/email-already-in-use') {
-          alert('Email Already In Use. Please Sign In Instead.');
+          $("#emailDialog").show();
+          $("#emailConfirm").click(function(){
+            $("#emailDialog").css("display", "none");
+          });
         }
       });
   }

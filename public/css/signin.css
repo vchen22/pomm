@@ -93,3 +93,17 @@ h2 {
 #submit {
   margin-top: 4%;
 }
+
+#authDialog, #passwordDialog, #weakDialog, #invalidDialog, #emailDialog {
+  width: 65%;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+#authConfirm, #passwordConfirm, #weakConfirm, #invalidConfirm, #emailConfirm {
+  border-radius: 10px;
+  background-color: #EBEBEB;
+  text-decoration: none;
+  color: black;
+}

@@ -27,15 +27,17 @@ fileInput.onchange = () => {
           }
         });
 
-        alert('Image successfully uploaded!');
-
-        db.collection('users')
-          .doc(user.uid)
-          .update({
-            profilePicture: true,
-          })
-          .then(() => {
-            location.reload();
+        $("#successDialog").show();
+          $("#successConfirm").click(function(){
+            $("#successDialog").css("display", "none");
+            db.collection('users')
+            .doc(user.uid)
+            .update({
+              profilePicture: true,
+            })
+            .then(() => {
+              location.reload();
+            });
           });
       });
     })
@@ -54,15 +56,17 @@ fileInput.onchange = () => {
           }
         });
 
-        alert('Image successfully uploaded!');
-
-        db.collection('users')
-          .doc(user.uid)
-          .update({
-            profilePicture: true,
-          })
-          .then(() => {
-            location.reload();
+        $("#successDialog").show();
+          $("#successConfirm").click(function(){
+            $("#successDialog").css("display", "none");
+              db.collection('users')
+              .doc(user.uid)
+              .update({
+                profilePicture: true,
+              })
+              .then(() => {
+                location.reload();
+              });
           });
       });
     });

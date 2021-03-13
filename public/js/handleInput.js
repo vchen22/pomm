@@ -9,7 +9,10 @@ function addTask(e) {
   let data = $('#task-input').val();
 
   if (data === '') {
-    alert('Please enter a valid task.');
+    $("#validDialog").show();
+    $("#validConfirm").click(function(){
+      $("#validDialog").css("display", "none");
+    });
   } else {
     auth.onAuthStateChanged((user) => {
       //console.log(data);
@@ -21,9 +24,10 @@ function addTask(e) {
             let dbTasks = doc.data().tasks;
 
             if (dbTasks.length >= 9) {
-              alert(
-                'Maximum number of tasks added. Please remove some to add more.'
-              );
+              $("#fullDialog").show();
+              $("#fullConfirm").click(function(){
+                $("#fullDialog").css("display", "none");
+              });
             } else {
               dbTasks.push(data);
 

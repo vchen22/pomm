@@ -1,7 +1,10 @@
 var totalTasks = 0;
 
 function handleRemove(num) {
-  if (confirm('Are you sure you are finished with this task?')) {
+  $("#deleteDialog").show();
+  $("#delete-cancel").click(deleteClose);
+  $("#delete-confirm").click(function(){
+    deleteClose();
     auth.onAuthStateChanged((user) => {
       if (user) {
         db.collection('users')
@@ -30,7 +33,41 @@ function handleRemove(num) {
         console.log('user not logged in');
       }
     });
-  }
+  });
+  // if (confirm('Are you sure you are finished with this task?')) {
+  //   auth.onAuthStateChanged((user) => {
+  //     if (user) {
+  //       db.collection('users')
+  //         .doc(user.uid)
+  //         .get()
+  //         .then((doc) => {
+  //           let dbTasks = doc.data().tasks;
+
+  //           //console.log(dbTasks);
+
+  //           // remove from db
+  //           //const index = dbTasks.indexOf(0);
+  //           dbTasks.splice(num, 1);
+
+  //           //console.log(dbTasks);
+
+  //           totalTasks++;
+
+  //           console.log(totalTasks);
+
+  //           db.collection('users').doc(user.uid).update({
+  //             tasks: dbTasks,
+  //           });
+  //         });
+  //     } else {
+  //       console.log('user not logged in');
+  //     }
+  //   });
+  // }
+}
+
+function deleteClose(){
+  $("#deleteDialog").css("display", "none");
 }
 
 auth.onAuthStateChanged((user) => {
@@ -113,16 +150,6 @@ auth.onAuthStateChanged((user) => {
     console.log('user not logged in');
   }
 });
-
-// document.getElementById('back').addEventListener('click', function () {
-//   if (
-//     confirm(
-//       "Are you sure you want to leave the session early? You'll lose all progresson towards your pomms."
-//     )
-//   ) {
-//     window.location.href = '/todolist';
-//   }
-// });
 
 function backPopUp(){
   $("#backDialog").show();

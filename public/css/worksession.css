@@ -87,20 +87,7 @@ h2{
       margin-top: 2%;
   }
 
-  /* ::-webkit-scrollbar {
-    width: auto;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background-color: #EBEBEB;
-  }
-  
-  ::-webkit-scrollbar-track-piece {
-    display: none;
-  } */
-
-#pauseDialog, #infoDialog {
+#pauseDialog, #infoDialog, #backDialog, #deleteDialog {
   width: 65%;
   position: absolute;
   z-index: 1000;
@@ -122,14 +109,7 @@ h2{
   padding: 7px 15px;
 }
 
-#backDialog {
-  width: 65%;
-  position: absolute;
-  z-index: 1000;
-  border-radius: 10px;
-}
-
-#back-cancel, #back-confirm {
+#back-cancel, #back-confirm, #delete-cancel, #delete-confirm {
   border-radius: 10px;
   background-color: #EBEBEB;
   text-decoration: none;

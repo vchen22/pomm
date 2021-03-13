@@ -23,19 +23,6 @@ ul {
   overflow: scroll;
 }
 
-/* ::-webkit-scrollbar {
-  width: auto;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: #EBEBEB;
-}
-
-::-webkit-scrollbar-track-piece {
-  display: none;
-} */
-
 li {
   border-radius: 15px;
   margin-bottom: 5px;
@@ -131,4 +118,18 @@ a {
   text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
+}
+
+#validDialog, #fullDialog {
+  width: 65%;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+#validConfirm, #fullConfirm {
+  border-radius: 10px;
+  background-color: #EBEBEB;
+  text-decoration: none;
+  color: black;
 }
